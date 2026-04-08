@@ -247,73 +247,7 @@ export function OfertaClient({ slug }: { slug: string }) {
             </aside>
           </div>
 
-          {/* Pacotes */}
-          <section id="pacotes" className="mb-12 md:mb-16 scroll-mt-20">
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground tracking-editorial mb-6 md:mb-8">
-              Pacotes disponíveis
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
-              {vendor.packages.map((pkg) => {
-                const isSelected = selectedPackage === pkg.id;
-                return (
-                  <article
-                    key={pkg.id}
-                    className={cn(
-                      "rounded-md border p-6 md:p-7 flex flex-col bg-card transition-colors",
-                      isSelected
-                        ? "border-primary ring-1 ring-primary"
-                        : "border-border",
-                    )}
-                  >
-                    <h3 className="font-display text-2xl md:text-3xl font-medium text-foreground tracking-editorial mb-2">
-                      {pkg.name}
-                    </h3>
-                    <p className="font-display text-3xl md:text-4xl text-primary tracking-editorial mb-1">
-                      {formatBRL(pkg.price)}
-                    </p>
-                    <Overline className="mb-5">Valor de referência</Overline>
-
-                    <ul className="space-y-2.5 mb-6 flex-1">
-                      {pkg.includes.map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-start gap-2.5 text-sm text-foreground leading-relaxed"
-                        >
-                          <Check className="size-4 text-primary shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                      {pkg.excludes.map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed"
-                        >
-                          <XIcon className="size-4 text-muted-foreground shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setSelectedPackage(pkg.id);
-                        handleSelectPackage(pkg.id);
-                      }}
-                      disabled={confirmingPackage}
-                      className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors disabled:opacity-50"
-                    >
-                      {confirmingPackage && isSelected
-                        ? "Salvando…"
-                        : existingSelection?.package_id === pkg.id
-                          ? "✓ Pacote escolhido"
-                          : "Quero este pacote →"}
-                    </button>
-                  </article>
-                );
-              })}
-            </div>
-          </section>
+          {/* Seção de pacotes removida — seleção individual abaixo */}
 
           {/* Serviços individuais (novo sistema) */}
           {vendor && (
