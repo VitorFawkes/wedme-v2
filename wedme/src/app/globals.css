@@ -1,0 +1,273 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   we.wedme — Design Tokens (paleta editorial Aman/Dior/Loro Piana)
+   ============================================================ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-brand-wine: var(--brand-wine);
+  --color-brand-rose: var(--brand-rose);
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+  --font-heading: var(--font-display), ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+  --radius-2xl: 0.75rem;
+  --radius-3xl: 1rem;
+}
+
+:root {
+  /* Paleta we.wedme — rosa/pink (ref. protótipo visual) */
+  --background: #FEFAF3;          /* creme quente */
+  --foreground: #0C0106;          /* preto quase-bordeaux */
+  --card: #FFFFFF;
+  --card-foreground: #0C0106;
+  --popover: #FFFFFF;
+  --popover-foreground: #0C0106;
+  --primary: #D4869C;             /* soft rose */
+  --primary-foreground: #FFFFFF;
+  --secondary: #FAEDD2;           /* bege quente */
+  --secondary-foreground: #0C0106;
+  --muted: #FAEDD2;
+  --muted-foreground: #777777;
+  --accent: #F5E8EF;              /* very light pink */
+  --accent-foreground: #0C0106;
+  --destructive: #B0342A;
+  --border: #E0C5CF;              /* soft pink border */
+  --input: #E0C5CF;
+  --ring: #D4869C;
+
+  --brand-wine: #B56B7E;          /* hover do botão primário (rose hover) */
+  --brand-rose: #E8A0BF;          /* acento secundário, ornamentos */
+
+  --radius: 0.25rem;
+
+  /* Overlays sobre foto (briefing §3.1) */
+  --overlay-dark-60: rgba(12, 1, 6, 0.60);
+  --overlay-dark-80: rgba(12, 1, 6, 0.80);
+}
+
+/* Sem dark mode — protótipo é só light, mas mantido para shadcn não quebrar */
+.dark {
+  --background: #FEFAF3;
+  --foreground: #0C0106;
+  --card: #FFFFFF;
+  --card-foreground: #0C0106;
+  --popover: #FFFFFF;
+  --popover-foreground: #0C0106;
+  --primary: #D4869C;
+  --primary-foreground: #FFFFFF;
+  --secondary: #FAEDD2;
+  --secondary-foreground: #0C0106;
+  --muted: #FAEDD2;
+  --muted-foreground: #777777;
+  --accent: #F5E8EF;
+  --accent-foreground: #0C0106;
+  --destructive: #B0342A;
+  --border: #E0C5CF;
+  --input: #E0C5CF;
+  --ring: #D4869C;
+  --brand-wine: #B56B7E;
+  --brand-rose: #E8A0BF;
+}
+
+/* ============================================================
+   Mobile-first base (princípios inegociáveis do plano)
+   ============================================================ */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    /* sem horizontal scroll, NUNCA */
+    overflow-x: hidden;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  /* previne auto-zoom do iOS Safari ao focar inputs (font-size < 16px) */
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+
+  /* foco visível acessível em qualquer interativo */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+
+  /* cursor pointer em tudo que é clicável — shadcn base-ui nem sempre aplica */
+  button:not(:disabled),
+  a[href],
+  [role="button"]:not([aria-disabled="true"]),
+  [role="link"],
+  label[for],
+  summary,
+  input[type="checkbox"],
+  input[type="radio"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+
+  /* respeita preferência do usuário por menos movimento */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================
+   Utilitários mobile-first — safe areas e dynamic viewport
+   ============================================================ */
+@layer utilities {
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+  .safe-px {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /* dynamic viewport units — funcionam com barra de URL do iOS Safari */
+  .h-dvh {
+    height: 100dvh;
+  }
+  .h-svh {
+    height: 100svh;
+  }
+  .h-lvh {
+    height: 100lvh;
+  }
+  .min-h-dvh {
+    min-height: 100dvh;
+  }
+  .min-h-svh {
+    min-height: 100svh;
+  }
+  .min-h-lvh {
+    min-height: 100lvh;
+  }
+
+  /* helpers de overlay sobre foto (briefing §3.1) */
+  .overlay-dark-60 {
+    background-color: var(--overlay-dark-60);
+  }
+  .overlay-dark-80 {
+    background-color: var(--overlay-dark-80);
+  }
+
+  /* padding-top que reserva espaço pra CoupleNavbar (h-14 mobile = 3.5rem,
+     h-16 desktop = 4rem) + altura dinâmica de top bars de trigger
+     (calculada via JS no trigger-renderer e exposta como CSS var
+     --trigger-top-bars-h) */
+  .pt-couple {
+    padding-top: calc(3.5rem + var(--trigger-top-bars-h, 0px));
+  }
+  @media (min-width: 768px) {
+    .pt-couple {
+      padding-top: calc(4rem + var(--trigger-top-bars-h, 0px));
+    }
+  }
+
+  /* tracking editorial usado em headings display */
+  .tracking-editorial {
+    letter-spacing: 0.01em;
+  }
+}
+
+/* ============================================================
+   Animações sutis (duração curta, transform/opacity only)
+   ============================================================ */
+@keyframes pulse-ornament {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-ornament {
+  animation: pulse-ornament 2.5s ease-in-out infinite;
+}
+
+@keyframes typing-dot {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+.animate-typing-dot {
+  animation: typing-dot 1.4s ease-in-out infinite;
+}
