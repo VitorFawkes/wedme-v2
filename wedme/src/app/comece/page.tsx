@@ -604,18 +604,18 @@ export default function ComecePage() {
             <div className="flex flex-col gap-2 items-start">
               <button
                 type="button"
-                onClick={handleStartText}
-                className="inline-flex items-center justify-center min-h-12 px-7 py-3 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
+                onClick={handleStartAudio}
+                className="inline-flex items-center justify-center gap-2 min-h-12 px-7 py-3 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide shadow-md shadow-primary/25 hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
               >
-                Responder por texto
+                <Mic className="size-4" />
+                Responder por áudio
               </button>
               <button
                 type="button"
-                onClick={handleStartAudio}
-                className="inline-flex items-center justify-center gap-2 min-h-12 px-7 py-3 rounded-sm border border-border bg-card text-foreground text-sm font-medium tracking-wide hover:border-primary transition-colors duration-200"
+                onClick={handleStartText}
+                className="inline-flex items-center justify-center gap-2 min-h-12 px-7 py-3 rounded-md border border-border bg-card text-foreground text-sm font-medium tracking-wide hover:border-primary hover:shadow-sm transition-all duration-300"
               >
-                <Mic className="size-4" />
-                Ver as perguntas e gravar um áudio
+                Prefiro digitar
               </button>
             </div>
           )}
