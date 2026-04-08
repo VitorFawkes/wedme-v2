@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - link "we.wedme — voltar para a home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic "we.wedme" [ref=e6]:
+          - img "we.wedme" [ref=e7]
+      - progressbar "Progresso do onboarding" [ref=e10]
+    - generic [ref=e12]:
+      - article "Mensagem da assistente" [ref=e14]: Oi! Eu sou a assistente da we.wedme. Vou fazer algumas perguntas rápidas pra entender o sonho de vocês (data, lugar, estilo, número de convidados) e, com isso, montar uma curadoria personalizada de espaços e profissionais. Leva uns 3 minutos. Topam?
+      - article "Mensagem da assistente" [ref=e16]: Que bom. Pra começar, me contem os primeiros nomes de vocês dois.
+      - article "Sua mensagem" [ref=e18]: Somos Ana e Pedro, vamos casar em Ilhabela em fevereiro de 2027 com uns 120 convidados
+      - article "Mensagem da assistente" [ref=e20]:
+        - generic [ref=e21]: Ana e Pedro — que combinação linda. Anotado.
+        - text: E vocês já têm uma data ou pelo menos uma ideia de mês?
+    - generic [ref=e23]:
+      - textbox "Respondam como preferirem..." [ref=e24]
+      - button "Enviar mensagem" [disabled]:
+        - img
+  - alert [ref=e25]

@@ -1,0 +1,12 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e247] [cursor=pointer]:
+    - img [ref=e248]
+  - alert [ref=e251]
+  - main [ref=e252]:
+    - generic [ref=e254]:
+      - generic "we.wedme" [ref=e255]
+      - generic [ref=e257]:
+        - progressbar "Progresso do onboarding"
+    - generic [ref=e259]:
+      - article "Mensagem da assistente" [ref=e261]: Oi. Eu sou a assistente da we.wedme. Estou aqui para entender como vocês imaginam o casamento e montar um caminho feito sob medida. Topam começar com algumas perguntas rápidas?
+      - button "Topamos" [ref=e263] [cursor=pointer]

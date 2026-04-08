@@ -1,0 +1,144 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e34]
+  - banner [ref=e35]:
+    - navigation [ref=e36]:
+      - link "Meu casamento" [ref=e37] [cursor=pointer]:
+        - /url: /meu-casamento
+        - generic "we.wedme" [ref=e38]
+      - generic [ref=e39]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e40] [cursor=pointer]:
+        - img [ref=e41]
+  - status [ref=e45]:
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - img [ref=e49]
+        - generic [ref=e52]:
+          - paragraph [ref=e53]: Vocês travaram R$ 55.700
+          - paragraph [ref=e54]: A reserva fica garantida por 48 horas. Depois disso, os preços podem mudar. Podemos finalizar?
+      - generic [ref=e55]:
+        - link "Ir ao checkout" [ref=e56] [cursor=pointer]:
+          - /url: /checkout
+        - button "Fechar aviso" [ref=e57] [cursor=pointer]:
+          - img [ref=e58]
+  - main [ref=e61]:
+    - generic [ref=e63]:
+      - paragraph [ref=e64]: Meu casamento
+      - heading "Olá, Ana e Pedro" [level=1] [ref=e65]
+      - paragraph [ref=e66]:
+        - text: Casamento em
+        - strong [ref=e67]: Ilhabela
+        - text: ·
+        - strong [ref=e68]: 14 de fevereiro de 2027
+      - generic [ref=e69]:
+        - progressbar [ref=e71]
+        - paragraph [ref=e72]:
+          - strong [ref=e73]: 3 de 6
+          - text: categorias escolhidas ·
+          - strong [ref=e74]: 50%
+          - text: do caminho
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - heading "Resumo financeiro" [level=2] [ref=e77]
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - paragraph [ref=e80]: R$ 55.700
+            - paragraph [ref=e81]: Confirmado
+          - generic [ref=e82]:
+            - paragraph [ref=e83]: R$ 24.300
+            - paragraph [ref=e84]: Disponível
+          - generic [ref=e85]:
+            - paragraph [ref=e86]: "3"
+            - paragraph [ref=e87]: Categorias pendentes
+      - generic [ref=e88]:
+        - heading "Suas categorias" [level=2] [ref=e89]
+        - generic [ref=e90]:
+          - link "Local Welucci Sansu Ver" [ref=e91] [cursor=pointer]:
+            - /url: /planejamento/local
+            - img [ref=e93]
+            - generic [ref=e95]:
+              - paragraph [ref=e96]: Local
+              - paragraph [ref=e97]: Welucci Sansu
+            - generic [ref=e99]:
+              - text: Ver
+              - img [ref=e100]
+          - link "Fotografia Marina Arruda Weddings Ver" [ref=e102] [cursor=pointer]:
+            - /url: /planejamento/fotografia
+            - img [ref=e104]
+            - generic [ref=e106]:
+              - paragraph [ref=e107]: Fotografia
+              - paragraph [ref=e108]: Marina Arruda Weddings
+            - generic [ref=e110]:
+              - text: Ver
+              - img [ref=e111]
+          - link "Decoração Escolher" [ref=e113] [cursor=pointer]:
+            - /url: /planejamento/decoracao
+            - img [ref=e115]
+            - paragraph [ref=e118]: Decoração
+            - generic [ref=e120]:
+              - text: Escolher
+              - img [ref=e121]
+          - link "Flores Escolher" [ref=e123] [cursor=pointer]:
+            - /url: /planejamento/flores
+            - img [ref=e125]
+            - paragraph [ref=e128]: Flores
+            - generic [ref=e130]:
+              - text: Escolher
+              - img [ref=e131]
+          - link "Buffet Ana Castello Buffet Ver" [ref=e133] [cursor=pointer]:
+            - /url: /planejamento/buffet
+            - img [ref=e135]
+            - generic [ref=e137]:
+              - paragraph [ref=e138]: Buffet
+              - paragraph [ref=e139]: Ana Castello Buffet
+            - generic [ref=e141]:
+              - text: Ver
+              - img [ref=e142]
+          - link "Roupas de Noiva Escolher" [ref=e144] [cursor=pointer]:
+            - /url: /planejamento/roupas-noiva
+            - img [ref=e146]
+            - paragraph [ref=e149]: Roupas de Noiva
+            - generic [ref=e151]:
+              - text: Escolher
+              - img [ref=e152]
+      - generic [ref=e154]:
+        - paragraph [ref=e155]: Próximo passo
+        - heading "Vocês ainda não escolheram Decoração" [level=3] [ref=e156]
+        - paragraph [ref=e157]: É uma das categorias mais importantes para o perfil de vocês.
+        - link "Escolher agora →" [ref=e158] [cursor=pointer]:
+          - /url: /planejamento/decoracao
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - paragraph [ref=e161]: Personalize
+          - heading "Deixem o site de vocês mais rico" [level=2] [ref=e162]
+          - paragraph [ref=e163]:
+            - text: O site do casamento que vocês vão compartilhar por WhatsApp fica
+            - strong [ref=e164]: muito mais bonito
+            - text: com detalhes pessoais. Sem pressão — tudo é opcional.
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - img [ref=e169]
+              - paragraph [ref=e172]: A trilha do nosso dia
+            - heading "Primeira música" [level=3] [ref=e173]
+            - paragraph [ref=e174]: “At Last — Etta James”
+            - button "Editar" [ref=e175] [cursor=pointer]:
+              - img [ref=e176]
+              - text: Editar
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - img [ref=e182]
+              - paragraph [ref=e184]: Nossa história
+            - heading "Como começou" [level=3] [ref=e185]
+            - paragraph [ref=e186]: A gente se conheceu numa festa de aniversário em 2021. Foi tímido no início, mas três semanas depois não saíamos mais um do lado do outro.
+            - button "Editar" [ref=e187] [cursor=pointer]:
+              - img [ref=e188]
+              - text: Editar
+      - generic [ref=e191]:
+        - generic [ref=e192]: ◇
+        - heading "Preview do site de vocês" [level=3] [ref=e193]
+        - paragraph [ref=e194]: Assim ele vai ficar quando vocês finalizarem tudo.
+        - link "Ver preview →" [ref=e195] [cursor=pointer]:
+          - /url: /casamento/ana-pedro
+  - button "Falar com um especialista" [ref=e197] [cursor=pointer]:
+    - img [ref=e198]
+    - generic [ref=e200]: Especialista

@@ -1,0 +1,125 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Meu casamento" [ref=e4] [cursor=pointer]:
+        - /url: /meu-casamento
+        - generic "we.wedme" [ref=e5]
+      - generic [ref=e6]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - paragraph [ref=e13]: Seu caminho personalizado
+      - heading "Íntimo & Emocional" [level=1] [ref=e14]
+      - paragraph [ref=e15]: Um casamento pequeno, onde cada convidado importa e cada detalhe conta uma história. A emoção acima de tudo — e a certeza de que menos pode ser muito mais.
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - text: Casamento em
+          - strong [ref=e18]: Ilhabela
+        - generic [ref=e19]: ·
+        - strong [ref=e21]: 14 de fevereiro de 2027
+        - generic [ref=e22]: ·
+        - generic [ref=e23]:
+          - text: Orçamento de
+          - strong [ref=e24]: R$ 80.000
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Seu plano para o grande dia" [level=2] [ref=e27]
+        - paragraph [ref=e28]: Na ordem ideal para o perfil de vocês. Podem começar por qualquer uma — mas a gente sugere seguir a sequência.
+      - status [ref=e30]:
+        - generic [ref=e31]:
+          - img [ref=e33]
+          - generic [ref=e36]:
+            - heading "Bem-vindos, Ana e Pedro" [level=3] [ref=e37]
+            - paragraph [ref=e38]: Montamos este caminho olhando para o sonho de vocês — começando por local, que é onde tudo costuma fazer mais diferença para casamentos Íntimo & Emocional. Podem começar pela ordem ou pela categoria que mais animar.
+          - button "Fechar" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+      - generic [ref=e43]:
+        - link "01 Local Onde o sim acontece Ver opções → Pular Local" [ref=e44] [cursor=pointer]:
+          - /url: /planejamento/local
+          - generic [ref=e45]:
+            - generic [ref=e46]: "01"
+            - img [ref=e47]
+          - generic [ref=e50]:
+            - heading "Local" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Onde o sim acontece
+            - generic [ref=e53]:
+              - generic [ref=e54]: Ver opções →
+              - button "Pular Local" [ref=e55]:
+                - img [ref=e56]
+                - text: Pular
+        - link "02 Fotografia O olhar que vai eternizar o dia Ver opções → Pular Fotografia" [ref=e58] [cursor=pointer]:
+          - /url: /planejamento/fotografia
+          - generic [ref=e59]:
+            - generic [ref=e60]: "02"
+            - img [ref=e61]
+          - generic [ref=e64]:
+            - heading "Fotografia" [level=3] [ref=e65]
+            - paragraph [ref=e66]: O olhar que vai eternizar o dia
+            - generic [ref=e67]:
+              - generic [ref=e68]: Ver opções →
+              - button "Pular Fotografia" [ref=e69]:
+                - img [ref=e70]
+                - text: Pular
+        - link "03 Decoração A atmosfera de cada cantinho Ver opções → Pular Decoração" [ref=e72] [cursor=pointer]:
+          - /url: /planejamento/decoracao
+          - generic [ref=e73]:
+            - generic [ref=e74]: "03"
+            - img [ref=e75]
+          - generic [ref=e78]:
+            - heading "Decoração" [level=3] [ref=e79]
+            - paragraph [ref=e80]: A atmosfera de cada cantinho
+            - generic [ref=e81]:
+              - generic [ref=e82]: Ver opções →
+              - button "Pular Decoração" [ref=e83]:
+                - img [ref=e84]
+                - text: Pular
+        - link "04 Flores O perfume e a delicadeza do dia Ver opções → Pular Flores" [ref=e86] [cursor=pointer]:
+          - /url: /planejamento/flores
+          - generic [ref=e87]:
+            - generic [ref=e88]: "04"
+            - img [ref=e89]
+          - generic [ref=e94]:
+            - heading "Flores" [level=3] [ref=e95]
+            - paragraph [ref=e96]: O perfume e a delicadeza do dia
+            - generic [ref=e97]:
+              - generic [ref=e98]: Ver opções →
+              - button "Pular Flores" [ref=e99]:
+                - img [ref=e100]
+                - text: Pular
+        - link "05 Buffet A mesa que vai contar a história Ver opções → Pular Buffet" [ref=e102] [cursor=pointer]:
+          - /url: /planejamento/buffet
+          - generic [ref=e103]:
+            - generic [ref=e104]: "05"
+            - img [ref=e105]
+          - generic [ref=e108]:
+            - heading "Buffet" [level=3] [ref=e109]
+            - paragraph [ref=e110]: A mesa que vai contar a história
+            - generic [ref=e111]:
+              - generic [ref=e112]: Ver opções →
+              - button "Pular Buffet" [ref=e113]:
+                - img [ref=e114]
+                - text: Pular
+        - link "06 Roupas de Noiva O vestido que vocês vão lembrar para sempre Ver opções → Pular Roupas de Noiva" [ref=e116] [cursor=pointer]:
+          - /url: /planejamento/roupas-noiva
+          - generic [ref=e117]:
+            - generic [ref=e118]: "06"
+            - img [ref=e119]
+          - generic [ref=e121]:
+            - heading "Roupas de Noiva" [level=3] [ref=e122]
+            - paragraph [ref=e123]: O vestido que vocês vão lembrar para sempre
+            - generic [ref=e124]:
+              - generic [ref=e125]: Ver opções →
+              - button "Pular Roupas de Noiva" [ref=e126]:
+                - img [ref=e127]
+                - text: Pular
+      - paragraph [ref=e129]:
+        - text: Não precisam fechar tudo pela plataforma — vocês podem
+        - strong [ref=e130]: pular categorias
+        - text: que já tem, ou que preferem resolver depois. O casamento segue firme.
+  - button "Falar com um especialista" [ref=e132] [cursor=pointer]:
+    - img [ref=e133]
+    - generic [ref=e135]: Especialista
+  - button "Open Next.js Dev Tools" [ref=e141] [cursor=pointer]:
+    - img [ref=e142]
+  - alert [ref=e145]

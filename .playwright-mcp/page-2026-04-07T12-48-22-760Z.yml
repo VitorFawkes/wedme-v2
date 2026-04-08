@@ -1,0 +1,17 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic "we.wedme" [ref=e5]
+      - progressbar "Progresso do onboarding" [ref=e23]
+    - generic [ref=e9]:
+      - article "Mensagem da assistente" [ref=e11]: Oi. Eu sou a assistente da we.wedme. Estou aqui para entender como vocês imaginam o casamento e montar um caminho feito sob medida. Topam começar com algumas perguntas rápidas?
+      - article "Mensagem da assistente" [ref=e16]: Que bom. Pra começar, me contem os primeiros nomes de vocês dois.
+      - article "Sua mensagem" [ref=e25]: Paulo e Ricardo
+      - article "Mensagem da assistente" [ref=e27]:
+        - generic [ref=e28]: Paulo e Ricardo, que dupla linda. 🤍
+        - text: Vocês já têm uma data definida ou uma ideia de mês e ano para o casamento?
+    - generic [ref=e18]:
+      - textbox "Respondam como preferirem..." [active] [ref=e19]
+      - button "Enviar mensagem" [disabled]:
+        - img
+  - alert [ref=e14]

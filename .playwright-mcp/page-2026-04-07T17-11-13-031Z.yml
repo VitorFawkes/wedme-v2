@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "we.wedme — voltar para a home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic "we.wedme" [ref=e5]:
+          - img "we.wedme" [ref=e6]
+      - generic "Casamento de Ana & Pedro" [ref=e7]:
+        - generic [ref=e8]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - generic [ref=e13]: Reiniciar
+  - status [ref=e14]:
+    - generic [ref=e16]:
+      - img [ref=e18]
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: 9 casais olhando agora
+        - paragraph [ref=e23]: Este profissional está com movimento nas últimas horas. Se fizer sentido pra vocês, vale garantir antes da próxima proposta chegar.
+      - button "Fechar aviso" [ref=e24] [cursor=pointer]:
+        - img [ref=e25]
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - link "Voltar para Fotografia" [ref=e30] [cursor=pointer]:
+        - /url: /planejamento/fotografia
+        - img [ref=e31]
+        - text: Voltar para Fotografia
+      - status [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e41]:
+            - heading "84% de match com o perfil de vocês" [level=3] [ref=e42]
+            - paragraph [ref=e43]: Nossa curadoria cruza , sua cidade e o estilo do portfólio deste profissional. Não é horóscopo, é análise real de compatibilidade.
+          - button "Fechar" [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+      - generic [ref=e48]:
+        - button "Abrir galeria" [ref=e49] [cursor=pointer]:
+          - img "Marina Arruda Weddings — capa principal" [ref=e50]
+        - generic [ref=e51]:
+          - button "Foto 2" [ref=e52] [cursor=pointer]:
+            - img "Marina Arruda Weddings — foto 2" [ref=e53]
+          - button "Foto 3" [ref=e54] [cursor=pointer]:
+            - img "Marina Arruda Weddings — foto 3" [ref=e55]
+          - button "Foto 4" [ref=e56] [cursor=pointer]:
+            - img "Marina Arruda Weddings — foto 4" [ref=e57]
+          - button "Foto 5" [ref=e58] [cursor=pointer]:
+            - img "Marina Arruda Weddings — foto 5" [ref=e59]
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - paragraph [ref=e62]: Fotografia
+          - heading "Marina Arruda Weddings" [level=1] [ref=e63]
+          - paragraph [ref=e64]:
+            - generic [ref=e65]: São Paulo, SP
+            - generic [ref=e66]: ·
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - text: Verificado
+            - generic [ref=e70]: ·
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - strong [ref=e74]: "4.9"
+            - generic [ref=e75]: ·
+            - generic [ref=e76]: 113 casamentos
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: Marina Arruda é referência em fotografia romântica e poética. Seu trabalho privilegia a luz dourada, os retratos íntimos e os pequenos gestos que outros profissionais perdem.
+            - paragraph [ref=e80]: Formada em Artes Visuais pela UNICAMP, Marina abriu seu próprio estúdio em 2018 e desde então fotografa cerca de 40 casamentos por ano em São Paulo, Trancoso e Europa.
+          - paragraph [ref=e81]: CNPJ 00.000.000/0001-00
+        - complementary [ref=e82]:
+          - generic [ref=e83]:
+            - paragraph [ref=e84]: Disponibilidade
+            - paragraph [ref=e85]: Defina a data no onboarding pra checar disponibilidade.
+            - paragraph [ref=e87]: A partir de
+            - paragraph [ref=e88]: R$ 9.200
+            - link "Ver pacotes →" [ref=e89] [cursor=pointer]:
+              - /url: "#pacotes"
+      - generic [ref=e90]:
+        - heading "Pacotes disponíveis" [level=2] [ref=e91]
+        - generic [ref=e92]:
+          - article [ref=e93]:
+            - heading "Pacote Romântico" [level=3] [ref=e94]
+            - paragraph [ref=e95]: R$ 9.200
+            - paragraph [ref=e96]: Valor de referência
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - img [ref=e99]
+                - generic [ref=e101]: 10 horas de cobertura
+              - listitem [ref=e102]:
+                - img [ref=e103]
+                - generic [ref=e105]: Ensaio pré-wedding
+              - listitem [ref=e106]:
+                - img [ref=e107]
+                - generic [ref=e109]: 300 fotos editadas
+              - listitem [ref=e110]:
+                - img [ref=e111]
+                - generic [ref=e113]: Galeria online 12 meses
+            - button "Quero este pacote →" [ref=e114] [cursor=pointer]
+          - article [ref=e115]:
+            - heading "Pacote Marina Completo" [level=3] [ref=e116]
+            - paragraph [ref=e117]: R$ 15.800
+            - paragraph [ref=e118]: Valor de referência
+            - list [ref=e119]:
+              - listitem [ref=e120]:
+                - img [ref=e121]
+                - generic [ref=e123]: 14 horas de cobertura
+              - listitem [ref=e124]:
+                - img [ref=e125]
+                - generic [ref=e127]: Ensaio pré-wedding em locação especial
+              - listitem [ref=e128]:
+                - img [ref=e129]
+                - generic [ref=e131]: 450 fotos editadas
+              - listitem [ref=e132]:
+                - img [ref=e133]
+                - generic [ref=e135]: Álbum impresso premium
+              - listitem [ref=e136]:
+                - img [ref=e137]
+                - generic [ref=e139]: Mini-álbum para os pais
+            - button "Quero este pacote →" [ref=e140] [cursor=pointer]
+      - generic [ref=e141]:
+        - heading "Trabalhos realizados" [level=2] [ref=e142]
+        - generic [ref=e143]:
+          - button "Foto 1 de 6" [ref=e144] [cursor=pointer]:
+            - img "Marina Arruda Weddings — trabalho 1" [ref=e145]
+          - button "Foto 2 de 6" [ref=e146] [cursor=pointer]:
+            - img "Marina Arruda Weddings — trabalho 2" [ref=e147]
+          - button "Foto 3 de 6" [ref=e148] [cursor=pointer]:
+            - img "Marina Arruda Weddings — trabalho 3" [ref=e149]
+          - button "Foto 4 de 6" [ref=e150] [cursor=pointer]:
+            - img "Marina Arruda Weddings — trabalho 4" [ref=e151]
+          - button "Foto 5 de 6" [ref=e152] [cursor=pointer]:
+            - img "Marina Arruda Weddings — trabalho 5" [ref=e153]
+          - button "Foto 6 de 6" [ref=e154] [cursor=pointer]:
+            - img "Marina Arruda Weddings — trabalho 6" [ref=e155]
+      - generic [ref=e156]:
+        - heading "O que os casais disseram" [level=2] [ref=e157]
+        - generic [ref=e158]:
+          - article [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]: IG
+              - generic [ref=e162]:
+                - paragraph [ref=e163]: Isabela & Gabriel
+                - paragraph [ref=e164]: São Paulo, SP · novembro de 2025
+            - generic [ref=e165]:
+              - img [ref=e166]
+              - img [ref=e168]
+              - img [ref=e170]
+              - img [ref=e172]
+              - img [ref=e174]
+            - paragraph [ref=e176]: “Marina viu detalhes que ninguém mais viu. As fotos são poesia visual.”
+          - article [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: FC
+              - generic [ref=e180]:
+                - paragraph [ref=e181]: Fernanda & Caio
+                - paragraph [ref=e182]: Trancoso, BA · setembro de 2025
+            - generic [ref=e183]:
+              - img [ref=e184]
+              - img [ref=e186]
+              - img [ref=e188]
+              - img [ref=e190]
+              - img [ref=e192]
+            - paragraph [ref=e194]: “Ela voou pra Trancoso só pra fotografar a gente. O resultado foi mágico, do começo ao fim.”
+          - article [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: AR
+              - generic [ref=e198]:
+                - paragraph [ref=e199]: Amanda & Renan
+                - paragraph [ref=e200]: São Paulo, SP · julho de 2025
+            - generic [ref=e201]:
+              - img [ref=e202]
+              - img [ref=e204]
+              - img [ref=e206]
+              - img [ref=e208]
+              - img [ref=e210]
+            - paragraph [ref=e212]: “Sensível, atenta, profissional. Não tem como descrever, só vendo as fotos.”
+  - button "Falar com um especialista" [ref=e214] [cursor=pointer]:
+    - img [ref=e215]
+    - generic [ref=e217]: Falar com especialista
+  - alert [ref=e218]

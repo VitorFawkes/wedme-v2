@@ -1,0 +1,5 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]: ◇
+    - paragraph [ref=e4]: Um momento…
+  - alert [ref=e5]

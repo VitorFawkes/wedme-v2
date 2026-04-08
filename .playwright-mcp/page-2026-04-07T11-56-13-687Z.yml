@@ -1,0 +1,147 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Meu casamento" [ref=e4] [cursor=pointer]:
+        - /url: /meu-casamento
+        - generic "we.wedme" [ref=e5]
+      - generic [ref=e6]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+        - generic [ref=e11]: Reiniciar
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Seu caminho personalizado
+      - heading "Íntimo & Emocional" [level=1] [ref=e15]
+      - paragraph [ref=e16]: Um casamento pequeno, onde cada convidado importa e cada detalhe conta uma história. A emoção acima de tudo — e a certeza de que menos pode ser muito mais.
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - text: Casamento em
+          - strong [ref=e19]: Ilhabela
+        - generic [ref=e20]: ·
+        - strong [ref=e22]: 14 de fevereiro de 2027
+        - generic [ref=e23]: ·
+        - generic [ref=e24]:
+          - text: Orçamento de
+          - strong [ref=e25]: R$ 80.000
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Seu plano para o grande dia" [level=2] [ref=e28]
+        - paragraph [ref=e29]: Na ordem ideal para o perfil de vocês. Podem começar por qualquer uma — mas a gente sugere seguir a sequência.
+      - generic [ref=e30]:
+        - article [ref=e31]:
+          - link "Ver opções de Local" [ref=e32] [cursor=pointer]:
+            - /url: /planejamento/local
+          - generic:
+            - img
+            - text: Escolhido
+          - generic:
+            - generic: "01"
+            - img
+          - generic [ref=e33]:
+            - generic:
+              - heading "Local" [level=3]
+              - paragraph: Onde o sim acontece
+            - generic:
+              - generic:
+                - img "Welucci Sansu"
+              - generic:
+                - paragraph: Welucci Sansu
+                - paragraph: R$ 28.000
+        - article [ref=e34]:
+          - link "Ver opções de Fotografia" [ref=e35] [cursor=pointer]:
+            - /url: /planejamento/fotografia
+          - generic:
+            - img
+            - text: Escolhido
+          - generic:
+            - generic: "02"
+            - img
+          - generic [ref=e36]:
+            - generic:
+              - heading "Fotografia" [level=3]
+              - paragraph: O olhar que vai eternizar o dia
+            - generic:
+              - generic:
+                - img "Marina Arruda Weddings"
+              - generic:
+                - paragraph: Marina Arruda Weddings
+                - paragraph: R$ 9.200
+        - article [ref=e37]:
+          - link "Ver opções de Decoração" [ref=e38] [cursor=pointer]:
+            - /url: /planejamento/decoracao
+          - generic:
+            - generic: "03"
+            - img
+          - generic [ref=e39]:
+            - generic:
+              - heading "Decoração" [level=3]
+              - paragraph: A atmosfera de cada cantinho
+            - generic [ref=e40]:
+              - generic: Ver opções →
+              - button "Pular Decoração" [ref=e41] [cursor=pointer]:
+                - img [ref=e42]
+                - text: Pular
+        - article [ref=e44]:
+          - link "Ver opções de Flores" [ref=e45] [cursor=pointer]:
+            - /url: /planejamento/flores
+          - generic:
+            - generic: "04"
+            - img
+          - generic [ref=e46]:
+            - generic:
+              - heading "Flores" [level=3]
+              - paragraph: O perfume e a delicadeza do dia
+            - generic [ref=e47]:
+              - generic: Ver opções →
+              - button "Pular Flores" [ref=e48] [cursor=pointer]:
+                - img [ref=e49]
+                - text: Pular
+        - article [ref=e51]:
+          - link "Ver opções de Buffet" [ref=e52] [cursor=pointer]:
+            - /url: /planejamento/buffet
+          - generic:
+            - img
+            - text: Escolhido
+          - generic:
+            - generic: "05"
+            - img
+          - generic [ref=e53]:
+            - generic:
+              - heading "Buffet" [level=3]
+              - paragraph: A mesa que vai contar a história
+            - generic:
+              - generic:
+                - img "Ana Castello Buffet"
+              - generic:
+                - paragraph: Ana Castello Buffet
+                - paragraph: R$ 18.500
+        - article [ref=e54]:
+          - link "Ver opções de Roupas de Noiva" [ref=e55] [cursor=pointer]:
+            - /url: /planejamento/roupas-noiva
+          - generic:
+            - generic: "06"
+            - img
+          - generic [ref=e56]:
+            - generic:
+              - heading "Roupas de Noiva" [level=3]
+              - paragraph: O vestido que vocês vão lembrar para sempre
+            - generic [ref=e57]:
+              - generic: Ver opções →
+              - button "Pular Roupas de Noiva" [ref=e58] [cursor=pointer]:
+                - img [ref=e59]
+                - text: Pular
+      - paragraph [ref=e61]:
+        - text: Não precisam fechar tudo pela plataforma — vocês podem
+        - strong [ref=e62]: pular categorias
+        - text: que já tem, ou que preferem resolver depois. O casamento segue firme.
+  - status "Progresso do planejamento" [ref=e63]:
+    - generic [ref=e64]:
+      - paragraph [ref=e66]:
+        - generic [ref=e67]: 3 de 6
+        - text: categorias escolhidas · R$ 55.700
+      - link "Ir ao meu casamento →" [ref=e68] [cursor=pointer]:
+        - /url: /meu-casamento
+  - button "Falar com um especialista" [ref=e70] [cursor=pointer]:
+    - img [ref=e71]
+    - generic [ref=e73]: Falar com especialista
+  - alert [ref=e74]

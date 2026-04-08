@@ -1,0 +1,112 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Meu casamento" [ref=e4] [cursor=pointer]:
+        - /url: /meu-casamento
+        - generic "we.wedme" [ref=e5]
+      - generic [ref=e6]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+  - status [ref=e11]:
+    - generic [ref=e13]:
+      - img [ref=e15]
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: 14 de fevereiro de 2027
+        - paragraph [ref=e20]: Este profissional tem esta data livre — mas tem outra proposta em aberto para o mesmo fim de semana. Normalmente definem em 72 horas.
+      - button "Fechar aviso" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - link "Local" [ref=e27] [cursor=pointer]:
+        - /url: /planejamento/local
+        - img [ref=e28]
+        - text: Local
+      - generic [ref=e30]:
+        - button "Abrir galeria" [ref=e31] [cursor=pointer]:
+          - img "Welucci Sansu — capa principal" [ref=e32]
+        - generic [ref=e33]:
+          - button "Foto 2" [ref=e34] [cursor=pointer]:
+            - img "Welucci Sansu — foto 2" [ref=e35]
+          - button "Foto 3" [ref=e36] [cursor=pointer]:
+            - img "Welucci Sansu — foto 3" [ref=e37]
+          - button "Foto 4" [ref=e38] [cursor=pointer]:
+            - img "Welucci Sansu — foto 4" [ref=e39]
+          - button "Foto 5" [ref=e40] [cursor=pointer]:
+            - img "Welucci Sansu — foto 5" [ref=e41]
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: Local
+        - heading "Welucci Sansu" [level=1] [ref=e45]
+        - paragraph [ref=e46]:
+          - generic [ref=e47]: Araçoiaba da Serra, SP
+          - generic [ref=e48]: ·
+          - generic [ref=e49]:
+            - img [ref=e50]
+            - text: Verificado
+          - generic [ref=e52]: ·
+          - generic [ref=e53]:
+            - img [ref=e54]
+            - strong [ref=e56]: "4.9"
+          - generic [ref=e57]: ·
+          - generic [ref=e58]: 52 casamentos
+        - paragraph [ref=e61]: Welucci Sansu tem a única chapel de cristal do Brasil, emoldurada por um pôr do sol espetacular. Versátil para mini weddings ou grandes celebrações, é o cenário perfeito para quem sonha com o "sim" ao entardecer.
+        - paragraph [ref=e62]: CNPJ 00.000.000/0001-00
+        - generic [ref=e63]:
+          - generic [ref=e64]: Chapel de cristal único no Brasil
+          - generic [ref=e65]: Pôr do sol espetacular
+          - generic [ref=e66]: Mini e grandes weddings
+      - generic [ref=e67]:
+        - heading "Pacotes disponíveis" [level=2] [ref=e68]
+        - generic [ref=e69]:
+          - article [ref=e70]:
+            - heading "Pacote Essencial" [level=3] [ref=e71]
+            - paragraph [ref=e72]: R$ 28.000
+            - paragraph [ref=e73]: Valor de referência
+            - list [ref=e74]:
+              - listitem [ref=e75]:
+                - img [ref=e76]
+                - generic [ref=e78]: Locação por 10h
+              - listitem [ref=e79]:
+                - img [ref=e80]
+                - generic [ref=e82]: Chapel de cristal
+            - button "Quero este pacote →" [ref=e83] [cursor=pointer]
+          - article [ref=e84]:
+            - heading "Pacote Premium" [level=3] [ref=e85]
+            - paragraph [ref=e86]: R$ 48.000
+            - paragraph [ref=e87]: Valor de referência
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - img [ref=e90]
+                - generic [ref=e92]: Locação por 14h
+              - listitem [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e96]: Suíte
+              - listitem [ref=e97]:
+                - img [ref=e98]
+                - generic [ref=e100]: Welcome drink
+            - button "Quero este pacote →" [ref=e101] [cursor=pointer]
+      - generic [ref=e102]:
+        - heading "Trabalhos realizados" [level=2] [ref=e103]
+        - generic [ref=e104]:
+          - button "Foto 1 de 6" [ref=e105] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 1" [ref=e106]
+          - button "Foto 2 de 6" [ref=e107] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 2" [ref=e108]
+          - button "Foto 3 de 6" [ref=e109] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 3" [ref=e110]
+          - button "Foto 4 de 6" [ref=e111] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 4" [ref=e112]
+          - button "Foto 5 de 6" [ref=e113] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 5" [ref=e114]
+          - button "Foto 6 de 6" [ref=e115] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 6" [ref=e116]
+  - generic [ref=e118]:
+    - generic [ref=e119]:
+      - paragraph [ref=e120]: A partir de
+      - paragraph [ref=e121]: R$ 28.000
+      - paragraph [ref=e122]: ✓ Disponível
+    - link "Ver pacotes →" [ref=e123] [cursor=pointer]:
+      - /url: "#pacotes"
+  - button "Falar com um especialista" [ref=e125] [cursor=pointer]:
+    - img [ref=e126]
+    - generic [ref=e128]: Especialista
+  - alert [ref=e129]

@@ -1,0 +1,78 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Meu casamento" [ref=e4] [cursor=pointer]:
+        - /url: /meu-casamento
+        - generic "we.wedme" [ref=e5]
+      - generic [ref=e6]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - link "Meu casamento" [ref=e13] [cursor=pointer]:
+        - /url: /meu-casamento
+        - img [ref=e14]
+        - text: Meu casamento
+      - generic [ref=e23]:
+        - paragraph [ref=e24]: Seu casamento
+        - heading "Ana & Pedro" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Ilhabela, SP · 14 de fevereiro de 2027
+      - generic [ref=e27]:
+        - heading "Quem faz parte do seu dia" [level=2] [ref=e28]
+        - generic [ref=e29]:
+          - article [ref=e30]:
+            - generic [ref=e31]:
+              - img "Welucci Sansu" [ref=e33]
+              - generic [ref=e34]:
+                - paragraph [ref=e35]: Local
+                - paragraph [ref=e36]: Welucci Sansu
+                - paragraph [ref=e37]: Pacote Essencial
+            - generic [ref=e38]:
+              - paragraph [ref=e39]: R$ 28.000
+              - link "Alterar" [ref=e40] [cursor=pointer]:
+                - /url: /oferta/welucci-sansu
+          - article [ref=e41]:
+            - generic [ref=e42]:
+              - img "Marina Arruda Weddings" [ref=e44]
+              - generic [ref=e45]:
+                - paragraph [ref=e46]: Fotografia
+                - paragraph [ref=e47]: Marina Arruda Weddings
+                - paragraph [ref=e48]: Pacote Romântico
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: R$ 9.200
+              - link "Alterar" [ref=e51] [cursor=pointer]:
+                - /url: /oferta/marina-arruda-weddings
+          - article [ref=e52]:
+            - generic [ref=e53]:
+              - img "Ana Castello Buffet" [ref=e55]
+              - generic [ref=e56]:
+                - paragraph [ref=e57]: Buffet
+                - paragraph [ref=e58]: Ana Castello Buffet
+                - paragraph [ref=e59]: Menu Essencial
+            - generic [ref=e60]:
+              - paragraph [ref=e61]: R$ 18.500
+              - link "Alterar" [ref=e62] [cursor=pointer]:
+                - /url: /oferta/ana-castello-buffet
+          - paragraph [ref=e63]:
+            - strong [ref=e64]: 6 categorias
+            - text: ficaram para depois — sem problema, vocês podem adicionar quando quiserem.
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: Total do casamento
+        - paragraph [ref=e67]: R$ 55.700
+        - paragraph [ref=e68]: Reserva válida por 48 horas
+      - generic [ref=e69]:
+        - img [ref=e71]
+        - generic [ref=e74]:
+          - paragraph [ref=e75]: Garantia we.wedme
+          - paragraph [ref=e76]: Cada profissional passou pela nossa curadoria. Se qualquer imprevisto impedir a entrega no seu dia, substituímos por um equivalente verificado — ou devolvemos 100% + R$500 de crédito.
+      - generic [ref=e77]:
+        - button "Ver contrato digital" [ref=e78] [cursor=pointer]
+        - generic [ref=e79] [cursor=pointer]:
+          - checkbox "Li e concordo com os termos da curadoria we.wedme." [ref=e80]
+          - generic [ref=e81]: Li e concordo com os termos da curadoria we.wedme.
+        - button "Confirmar meu casamento" [disabled]
+        - paragraph [ref=e82]: Esta é uma simulação — nenhum pagamento é processado.
+  - button "Falar com um especialista" [ref=e84] [cursor=pointer]:
+    - img [ref=e85]
+    - generic [ref=e87]: Especialista
+  - alert [ref=e88]

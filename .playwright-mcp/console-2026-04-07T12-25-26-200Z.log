@@ -1,0 +1,5 @@
+[     124ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/_next/image?url=https%3A%2F%2Fwelucci.com%2Fwp-content%2Fuploads%2F2025%2F10%2Fwelucci-sansu-5.webp&w=96&q=75:0
+[     126ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/oferta/ana-castello-buffet?_rsc=oi2ea:0
+[     127ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/oferta/marina-arruda-weddings?_rsc=oi2ea:0
+[     127ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/oferta/welucci-sansu?_rsc=oi2ea:0
+[     127ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3001/meu-casamento?_rsc=oi2ea:0

@@ -1,0 +1,2 @@
+[   81218ms] [ERROR] Access to fetch at 'https://welucci.com/wp-content/uploads/2025/10/patio-welucci-card-home.webp' from origin 'http://localhost:3001' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:3001/:0
+[   81218ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://welucci.com/wp-content/uploads/2025/10/patio-welucci-card-home.webp:0

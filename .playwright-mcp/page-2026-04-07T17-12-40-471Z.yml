@@ -1,0 +1,338 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "we.wedme — voltar para a home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic "we.wedme" [ref=e5]:
+          - img "we.wedme" [ref=e6]
+      - generic "Casamento de Júlia & Rafael" [ref=e7]:
+        - generic [ref=e8]: Júlia & Rafael
+      - button "Reiniciar demo" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - generic [ref=e13]: Reiniciar
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - link "Voltar ao meu plano" [ref=e16] [cursor=pointer]:
+        - /url: /planejamento
+        - img [ref=e17]
+        - text: Voltar ao meu plano
+      - generic [ref=e19]:
+        - heading "Local" [level=1] [ref=e20]
+        - paragraph [ref=e21]: 13 profissionais curados para o perfil de vocês em Trancoso.
+      - generic [ref=e22]:
+        - img "Welucci Fontana" [ref=e24]
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: Você já escolheu
+          - paragraph [ref=e27]: Welucci Fontana
+          - paragraph [ref=e28]: Pacote Essencial · R$ 30.000
+        - generic [ref=e29]:
+          - link "Ver detalhes" [ref=e30] [cursor=pointer]:
+            - /url: /oferta/welucci-fontana
+          - button "Trocar" [ref=e31] [cursor=pointer]
+      - status [ref=e33]:
+        - generic [ref=e34]:
+          - img [ref=e36]
+          - generic [ref=e41]:
+            - heading "Casais com perfil parecido" [level=3] [ref=e42]
+            - paragraph [ref=e43]: Nos últimos 3 meses, 28 casais Natureza & Destination em Trancoso escolheram Welucci Vila Real nesta categoria. Vocês podem explorar tudo. Achamos justo saberem por onde os outros começam.
+          - button "Fechar" [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+      - generic [ref=e48]:
+        - link "Welucci Sansu — Onde o pôr do sol encontra o \"sim\" mais importante da sua vida Verificado Welucci Sansu Araçoiaba da Serra, SP 4.9 52 casamentos “Casais com perfil Íntimo & Emocional escolheram este espaço nos últimos 3 meses” A partir de R$ 28.000 Ver perfil →" [ref=e49] [cursor=pointer]:
+          - /url: /oferta/welucci-sansu
+          - generic [ref=e50]:
+            - img "Welucci Sansu — Onde o pôr do sol encontra o \"sim\" mais importante da sua vida" [ref=e51]
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - text: Verificado
+          - generic [ref=e55]:
+            - heading "Welucci Sansu" [level=3] [ref=e56]
+            - paragraph [ref=e57]:
+              - generic [ref=e58]: Araçoiaba da Serra, SP
+              - generic [ref=e59]: ·
+              - img [ref=e60]
+              - generic [ref=e62]: "4.9"
+              - generic [ref=e63]: ·
+              - generic [ref=e64]: 52 casamentos
+            - paragraph [ref=e65]: “Casais com perfil Íntimo & Emocional escolheram este espaço nos últimos 3 meses”
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - paragraph [ref=e68]: A partir de
+                - paragraph [ref=e69]: R$ 28.000
+              - generic [ref=e70]: Ver perfil →
+        - link "Welucci Ocean — O cenário perfeito para um casamento inesquecível à beira-mar Verificado Welucci Ocean Guarujá, SP 4.9 48 casamentos “Destination preferido por casais Natureza & Destination” A partir de R$ 38.000 Ver perfil →" [ref=e71] [cursor=pointer]:
+          - /url: /oferta/welucci-ocean
+          - generic [ref=e72]:
+            - img "Welucci Ocean — O cenário perfeito para um casamento inesquecível à beira-mar" [ref=e73]
+            - generic [ref=e74]:
+              - img [ref=e75]
+              - text: Verificado
+          - generic [ref=e77]:
+            - heading "Welucci Ocean" [level=3] [ref=e78]
+            - paragraph [ref=e79]:
+              - generic [ref=e80]: Guarujá, SP
+              - generic [ref=e81]: ·
+              - img [ref=e82]
+              - generic [ref=e84]: "4.9"
+              - generic [ref=e85]: ·
+              - generic [ref=e86]: 48 casamentos
+            - paragraph [ref=e87]: “Destination preferido por casais Natureza & Destination”
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - paragraph [ref=e90]: A partir de
+                - paragraph [ref=e91]: R$ 38.000
+              - generic [ref=e92]: Ver perfil →
+        - link "Welucci Fontana — A vila italiana da Welucci no interior de São Paulo Verificado Welucci Fontana Votorantim, SP 4.8 39 casamentos “Cenário cinematográfico preferido de casais Natureza & Destination” A partir de R$ 30.000 Ver perfil →" [ref=e93] [cursor=pointer]:
+          - /url: /oferta/welucci-fontana
+          - generic [ref=e94]:
+            - img "Welucci Fontana — A vila italiana da Welucci no interior de São Paulo" [ref=e95]
+            - generic [ref=e96]:
+              - img [ref=e97]
+              - text: Verificado
+          - generic [ref=e99]:
+            - heading "Welucci Fontana" [level=3] [ref=e100]
+            - paragraph [ref=e101]:
+              - generic [ref=e102]: Votorantim, SP
+              - generic [ref=e103]: ·
+              - img [ref=e104]
+              - generic [ref=e106]: "4.8"
+              - generic [ref=e107]: ·
+              - generic [ref=e108]: 39 casamentos
+            - paragraph [ref=e109]: “Cenário cinematográfico preferido de casais Natureza & Destination”
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - paragraph [ref=e112]: A partir de
+                - paragraph [ref=e113]: R$ 30.000
+              - generic [ref=e114]: Ver perfil →
+        - link "Welucci Vila Real — Cercado por verde, luz natural e beleza em cada detalhe Verificado Welucci Vila Real Embu das Artes, SP 4.9 58 casamentos “Escolhido por casais com perfil Natureza & Destination” A partir de R$ 24.000 Ver perfil →" [ref=e115] [cursor=pointer]:
+          - /url: /oferta/welucci-vila-real
+          - generic [ref=e116]:
+            - img "Welucci Vila Real — Cercado por verde, luz natural e beleza em cada detalhe" [ref=e117]
+            - generic [ref=e118]:
+              - img [ref=e119]
+              - text: Verificado
+          - generic [ref=e121]:
+            - heading "Welucci Vila Real" [level=3] [ref=e122]
+            - paragraph [ref=e123]:
+              - generic [ref=e124]: Embu das Artes, SP
+              - generic [ref=e125]: ·
+              - img [ref=e126]
+              - generic [ref=e128]: "4.9"
+              - generic [ref=e129]: ·
+              - generic [ref=e130]: 58 casamentos
+            - paragraph [ref=e131]: “Escolhido por casais com perfil Natureza & Destination”
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - paragraph [ref=e134]: A partir de
+                - paragraph [ref=e135]: R$ 24.000
+              - generic [ref=e136]: Ver perfil →
+        - link "Welucci Estaiada — O seu casamento em um cartão postal de São Paulo Verificado Welucci Estaiada São Paulo, SP 4.9 87 casamentos “Casais com perfil Grande Celebração escolheram este espaço nos últimos 3 meses” A partir de R$ 25.000 Ver perfil →" [ref=e137] [cursor=pointer]:
+          - /url: /oferta/welucci-estaiada
+          - generic [ref=e138]:
+            - img "Welucci Estaiada — O seu casamento em um cartão postal de São Paulo" [ref=e139]
+            - generic [ref=e140]:
+              - img [ref=e141]
+              - text: Verificado
+          - generic [ref=e143]:
+            - heading "Welucci Estaiada" [level=3] [ref=e144]
+            - paragraph [ref=e145]:
+              - generic [ref=e146]: São Paulo, SP
+              - generic [ref=e147]: ·
+              - img [ref=e148]
+              - generic [ref=e150]: "4.9"
+              - generic [ref=e151]: ·
+              - generic [ref=e152]: 87 casamentos
+            - paragraph [ref=e153]: “Casais com perfil Grande Celebração escolheram este espaço nos últimos 3 meses”
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - paragraph [ref=e156]: A partir de
+                - paragraph [ref=e157]: R$ 25.000
+              - generic [ref=e158]: Ver perfil →
+        - link "Pátio Welucci — O espaço à altura das histórias que merecem ser celebradas Verificado Pátio Welucci São Paulo, SP 4.8 64 casamentos “Escolhido recentemente por casais em busca de espaços versáteis” A partir de R$ 28.000 Ver perfil →" [ref=e159] [cursor=pointer]:
+          - /url: /oferta/patio-welucci
+          - generic [ref=e160]:
+            - img "Pátio Welucci — O espaço à altura das histórias que merecem ser celebradas" [ref=e161]
+            - generic [ref=e162]:
+              - img [ref=e163]
+              - text: Verificado
+          - generic [ref=e165]:
+            - heading "Pátio Welucci" [level=3] [ref=e166]
+            - paragraph [ref=e167]:
+              - generic [ref=e168]: São Paulo, SP
+              - generic [ref=e169]: ·
+              - img [ref=e170]
+              - generic [ref=e172]: "4.8"
+              - generic [ref=e173]: ·
+              - generic [ref=e174]: 64 casamentos
+            - paragraph [ref=e175]: “Escolhido recentemente por casais em busca de espaços versáteis”
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - paragraph [ref=e178]: A partir de
+                - paragraph [ref=e179]: R$ 28.000
+              - generic [ref=e180]: Ver perfil →
+        - link "Welucci Village — Um espaço projetado para acolher o amor e o extraordinário Verificado Welucci Village São Paulo, SP 4.7 41 casamentos “Indicado para casais com perfil Minimalista Moderno” A partir de R$ 22.000 Ver perfil →" [ref=e181] [cursor=pointer]:
+          - /url: /oferta/welucci-village
+          - generic [ref=e182]:
+            - img "Welucci Village — Um espaço projetado para acolher o amor e o extraordinário" [ref=e183]
+            - generic [ref=e184]:
+              - img [ref=e185]
+              - text: Verificado
+          - generic [ref=e187]:
+            - heading "Welucci Village" [level=3] [ref=e188]
+            - paragraph [ref=e189]:
+              - generic [ref=e190]: São Paulo, SP
+              - generic [ref=e191]: ·
+              - img [ref=e192]
+              - generic [ref=e194]: "4.7"
+              - generic [ref=e195]: ·
+              - generic [ref=e196]: 41 casamentos
+            - paragraph [ref=e197]: “Indicado para casais com perfil Minimalista Moderno”
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - paragraph [ref=e200]: A partir de
+                - paragraph [ref=e201]: R$ 22.000
+              - generic [ref=e202]: Ver perfil →
+        - link "Welucci The One — A essência da elegância contemporânea no seu casamento Verificado Welucci The One São Paulo, SP 4.9 71 casamentos “Preferência de casais com perfil Clássico Atemporal e Minimalista Moderno” A partir de R$ 30.000 Ver perfil →" [ref=e203] [cursor=pointer]:
+          - /url: /oferta/welucci-the-one
+          - generic [ref=e204]:
+            - img "Welucci The One — A essência da elegância contemporânea no seu casamento" [ref=e205]
+            - generic [ref=e206]:
+              - img [ref=e207]
+              - text: Verificado
+          - generic [ref=e209]:
+            - heading "Welucci The One" [level=3] [ref=e210]
+            - paragraph [ref=e211]:
+              - generic [ref=e212]: São Paulo, SP
+              - generic [ref=e213]: ·
+              - img [ref=e214]
+              - generic [ref=e216]: "4.9"
+              - generic [ref=e217]: ·
+              - generic [ref=e218]: 71 casamentos
+            - paragraph [ref=e219]: “Preferência de casais com perfil Clássico Atemporal e Minimalista Moderno”
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - paragraph [ref=e222]: A partir de
+                - paragraph [ref=e223]: R$ 30.000
+              - generic [ref=e224]: Ver perfil →
+        - link "Casa Welucci — Onde elegância, conforto e propósito se encontram Verificado Casa Welucci São Paulo, SP 4.8 53 casamentos “Escolhido por casais que querem casamentos íntimos e acolhedores” A partir de R$ 18.000 Ver perfil →" [ref=e225] [cursor=pointer]:
+          - /url: /oferta/casa-welucci
+          - generic [ref=e226]:
+            - img "Casa Welucci — Onde elegância, conforto e propósito se encontram" [ref=e227]
+            - generic [ref=e228]:
+              - img [ref=e229]
+              - text: Verificado
+          - generic [ref=e231]:
+            - heading "Casa Welucci" [level=3] [ref=e232]
+            - paragraph [ref=e233]:
+              - generic [ref=e234]: São Paulo, SP
+              - generic [ref=e235]: ·
+              - img [ref=e236]
+              - generic [ref=e238]: "4.8"
+              - generic [ref=e239]: ·
+              - generic [ref=e240]: 53 casamentos
+            - paragraph [ref=e241]: “Escolhido por casais que querem casamentos íntimos e acolhedores”
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - paragraph [ref=e244]: A partir de
+                - paragraph [ref=e245]: R$ 18.000
+              - generic [ref=e246]: Ver perfil →
+        - link "Welucci Fagundes — Onde o início da sua história encontra séculos de tradição Verificado Welucci Fagundes Mairiporã, SP 4.9 46 casamentos “Preferência absoluta de casais com perfil Clássico Atemporal” A partir de R$ 35.000 Ver perfil →" [ref=e247] [cursor=pointer]:
+          - /url: /oferta/welucci-fagundes
+          - generic [ref=e248]:
+            - img "Welucci Fagundes — Onde o início da sua história encontra séculos de tradição" [ref=e249]
+            - generic [ref=e250]:
+              - img [ref=e251]
+              - text: Verificado
+          - generic [ref=e253]:
+            - heading "Welucci Fagundes" [level=3] [ref=e254]
+            - paragraph [ref=e255]:
+              - generic [ref=e256]: Mairiporã, SP
+              - generic [ref=e257]: ·
+              - img [ref=e258]
+              - generic [ref=e260]: "4.9"
+              - generic [ref=e261]: ·
+              - generic [ref=e262]: 46 casamentos
+            - paragraph [ref=e263]: “Preferência absoluta de casais com perfil Clássico Atemporal”
+            - generic [ref=e264]:
+              - generic [ref=e265]:
+                - paragraph [ref=e266]: A partir de
+                - paragraph [ref=e267]: R$ 35.000
+              - generic [ref=e268]: Ver perfil →
+        - link "Welucci Kratos — Imponente e sofisticado, à altura da sua história de amor Verificado Welucci Kratos Vinhedo, SP 4.8 44 casamentos “Indicado para casais com perfil Grande Celebração” A partir de R$ 32.000 Ver perfil →" [ref=e269] [cursor=pointer]:
+          - /url: /oferta/welucci-kratos
+          - generic [ref=e270]:
+            - img "Welucci Kratos — Imponente e sofisticado, à altura da sua história de amor" [ref=e271]
+            - generic [ref=e272]:
+              - img [ref=e273]
+              - text: Verificado
+          - generic [ref=e275]:
+            - heading "Welucci Kratos" [level=3] [ref=e276]
+            - paragraph [ref=e277]:
+              - generic [ref=e278]: Vinhedo, SP
+              - generic [ref=e279]: ·
+              - img [ref=e280]
+              - generic [ref=e282]: "4.8"
+              - generic [ref=e283]: ·
+              - generic [ref=e284]: 44 casamentos
+            - paragraph [ref=e285]: “Indicado para casais com perfil Grande Celebração”
+            - generic [ref=e286]:
+              - generic [ref=e287]:
+                - paragraph [ref=e288]: A partir de
+                - paragraph [ref=e289]: R$ 32.000
+              - generic [ref=e290]: Ver perfil →
+        - link "Welucci Single — Quando o momento é único, o espaço precisa ser singular Verificado Welucci Single São Paulo, SP 4.8 37 casamentos “Favorito de casais com perfil Íntimo & Emocional” A partir de R$ 20.000 Ver perfil →" [ref=e291] [cursor=pointer]:
+          - /url: /oferta/welucci-single
+          - generic [ref=e292]:
+            - img "Welucci Single — Quando o momento é único, o espaço precisa ser singular" [ref=e293]
+            - generic [ref=e294]:
+              - img [ref=e295]
+              - text: Verificado
+          - generic [ref=e297]:
+            - heading "Welucci Single" [level=3] [ref=e298]
+            - paragraph [ref=e299]:
+              - generic [ref=e300]: São Paulo, SP
+              - generic [ref=e301]: ·
+              - img [ref=e302]
+              - generic [ref=e304]: "4.8"
+              - generic [ref=e305]: ·
+              - generic [ref=e306]: 37 casamentos
+            - paragraph [ref=e307]: “Favorito de casais com perfil Íntimo & Emocional”
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - paragraph [ref=e310]: A partir de
+                - paragraph [ref=e311]: R$ 20.000
+              - generic [ref=e312]: Ver perfil →
+        - link "Welucci Gardens — O espaço que transformou o conceito de casar em São Paulo Verificado Welucci Gardens São Paulo, SP 4.9 102 casamentos “O espaço mais procurado por noivas que sonham com jardins” A partir de R$ 32.000 Ver perfil →" [ref=e313] [cursor=pointer]:
+          - /url: /oferta/welucci-gardens
+          - generic [ref=e314]:
+            - img "Welucci Gardens — O espaço que transformou o conceito de casar em São Paulo" [ref=e315]
+            - generic [ref=e316]:
+              - img [ref=e317]
+              - text: Verificado
+          - generic [ref=e319]:
+            - heading "Welucci Gardens" [level=3] [ref=e320]
+            - paragraph [ref=e321]:
+              - generic [ref=e322]: São Paulo, SP
+              - generic [ref=e323]: ·
+              - img [ref=e324]
+              - generic [ref=e326]: "4.9"
+              - generic [ref=e327]: ·
+              - generic [ref=e328]: 102 casamentos
+            - paragraph [ref=e329]: “O espaço mais procurado por noivas que sonham com jardins”
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - paragraph [ref=e332]: A partir de
+                - paragraph [ref=e333]: R$ 32.000
+              - generic [ref=e334]: Ver perfil →
+      - button "Pular esta categoria" [ref=e336] [cursor=pointer]
+  - status "Progresso do planejamento" [ref=e337]:
+    - generic [ref=e338]:
+      - paragraph [ref=e340]:
+        - generic [ref=e341]: 2 de 6
+        - text: categorias escolhidas · R$ 47.500
+      - link "Ir ao meu casamento →" [ref=e342] [cursor=pointer]:
+        - /url: /meu-casamento
+  - button "Falar com um especialista" [ref=e344] [cursor=pointer]:
+    - img [ref=e345]
+    - generic [ref=e347]: Falar com especialista
+  - alert [ref=e348]

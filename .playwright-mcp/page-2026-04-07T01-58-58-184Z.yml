@@ -1,0 +1,30 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e39] [cursor=pointer]:
+    - img [ref=e40]
+  - alert [ref=e43]
+  - main [ref=e54]:
+    - generic [ref=e56]:
+      - generic "we.wedme" [ref=e57]
+      - progressbar [ref=e60]
+    - generic [ref=e62]:
+      - article "Mensagem da assistente" [ref=e64]:
+        - generic [ref=e65]:
+          - text: Última pergunta,
+          - strong [ref=e66]: Ana
+          - text: e
+          - strong [ref=e67]: Pedro
+          - text: . ✨
+        - generic [ref=e68]: O que é o casamento para vocês — e como vocês imaginam ele?
+        - generic [ref=e69]: Escrevam o que vier ao coração. Pode ser uma palavra, um parágrafo, uma história inteira. Se preferirem, gravem um áudio.
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - textbox "Texto do sonho do casamento" [ref=e72]:
+            - /placeholder: Escrevam o que vem à cabeça...
+          - generic [ref=e73]:
+            - generic [ref=e74]: Mínimo 20 caracteres.
+            - generic [ref=e75]: "0"
+        - generic [ref=e76]:
+          - button "Enviar nosso sonho →" [disabled]
+          - button "Gravar áudio em vez de digitar" [ref=e77] [cursor=pointer]:
+            - img [ref=e78]
+            - text: Gravar áudio

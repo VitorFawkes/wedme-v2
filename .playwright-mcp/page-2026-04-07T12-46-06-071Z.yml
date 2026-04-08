@@ -1,0 +1,10 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic "we.wedme" [ref=e5]
+      - generic [ref=e7]:
+        - progressbar "Progresso do onboarding"
+    - generic [ref=e9]:
+      - article "Mensagem da assistente" [ref=e11]: Oi. Eu sou a assistente da we.wedme. Estou aqui para entender como vocês imaginam o casamento e montar um caminho feito sob medida. Topam começar com algumas perguntas rápidas?
+      - button "Topamos" [ref=e13] [cursor=pointer]
+  - alert [ref=e14]

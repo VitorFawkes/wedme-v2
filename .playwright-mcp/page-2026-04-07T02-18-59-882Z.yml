@@ -1,0 +1,142 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - img "Local do casamento de Ana e Pedro" [ref=e4]
+      - generic [ref=e6]:
+        - generic [ref=e7]: ◇
+        - paragraph [ref=e8]: Casamento
+        - heading "Ana & Pedro" [level=1] [ref=e9]:
+          - generic [ref=e10]: Ana
+          - generic [ref=e11]: "&"
+          - generic [ref=e12]: Pedro
+        - paragraph [ref=e13]: 14 de fevereiro de 2027
+        - paragraph [ref=e14]: Ilhabela, SP
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: Contagem regressiva
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: "313"
+        - paragraph [ref=e21]: dias
+      - paragraph [ref=e22]:
+        - text: Ou aproximadamente
+        - strong [ref=e23]: "10"
+        - text: meses e
+        - strong [ref=e24]: "13"
+        - text: dias
+    - generic [ref=e26]:
+      - separator [ref=e27]:
+        - generic [ref=e29]: ◇
+      - paragraph [ref=e31]: Nossa história
+      - heading "Como tudo começou" [level=2] [ref=e32]
+      - paragraph [ref=e33]: A gente se conheceu numa festa de aniversário em 2021. Foi tímido no início, mas três semanas depois não saíamos mais um do lado do outro.
+      - generic [ref=e35]: ◇
+      - paragraph [ref=e36]: O que sonhamos
+      - blockquote [ref=e37]: “Queremos um casamento íntimo ao entardecer, pé na areia, com a família mais próxima. O pôr do sol em Ilhabela é tudo o que sonhamos.”
+    - generic [ref=e39]:
+      - img [ref=e41]
+      - paragraph [ref=e44]: A trilha do nosso dia
+      - heading "A primeira música" [level=2] [ref=e45]
+      - paragraph [ref=e46]: “At Last — Etta James”
+      - paragraph [ref=e47]: A música que vai marcar esse dia
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - separator [ref=e51]:
+          - generic [ref=e53]: ◇
+        - paragraph [ref=e55]: O Local
+        - heading "Onde a gente se encontra" [level=2] [ref=e56]
+      - img "Welucci Sansu" [ref=e58]
+      - generic [ref=e59]:
+        - heading "Welucci Sansu" [level=3] [ref=e60]
+        - paragraph [ref=e61]:
+          - img [ref=e62]
+          - text: Araçoiaba da Serra, SP
+        - paragraph [ref=e65]: Onde o pôr do sol encontra o "sim" mais importante da sua vida
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - paragraph [ref=e69]: Atmosfera
+        - heading "O clima que a gente imagina para o dia" [level=2] [ref=e70]:
+          - text: O clima que a gente
+          - text: imagina para o dia
+      - generic [ref=e71]:
+        - img "Atmosfera 1" [ref=e73]
+        - img "Atmosfera 2" [ref=e75]
+        - img "Atmosfera 3" [ref=e77]
+        - img "Atmosfera 4" [ref=e79]
+        - img "Atmosfera 5" [ref=e81]
+        - img "Atmosfera 6" [ref=e83]
+        - img "Atmosfera 7" [ref=e85]
+        - img "Atmosfera 8" [ref=e87]
+        - img "Atmosfera 9" [ref=e89]
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - separator [ref=e93]:
+          - generic [ref=e95]: ◇
+        - paragraph [ref=e97]: Programação
+        - heading "O ritmo do dia" [level=2] [ref=e98]
+      - list [ref=e99]:
+        - listitem [ref=e100]:
+          - generic [ref=e103]:
+            - paragraph [ref=e104]: 16:00
+            - heading "Recepção" [level=3] [ref=e105]
+            - paragraph [ref=e106]: Welcome drink e acolhida no jardim
+        - listitem [ref=e107]:
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: 17:00
+            - heading "Cerimônia" [level=3] [ref=e112]
+            - paragraph [ref=e113]: O momento que tudo muda
+        - listitem [ref=e114]:
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: 18:00
+            - heading "Coquetel" [level=3] [ref=e119]
+            - paragraph [ref=e120]: Pra comer, beber e descansar os pés
+        - listitem [ref=e121]:
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: 20:00
+            - heading "Jantar" [level=3] [ref=e126]
+            - paragraph [ref=e127]: O menu que a gente escolheu com carinho
+        - listitem [ref=e128]:
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: 22:00
+            - heading "Festa" [level=3] [ref=e132]
+            - paragraph [ref=e133]: Começando com "At Last — Etta James"
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - paragraph [ref=e137]: Curadoria
+        - heading "Quem faz parte do nosso dia" [level=2] [ref=e138]:
+          - text: Quem faz parte
+          - text: do nosso dia
+      - generic [ref=e139]:
+        - article [ref=e140]:
+          - img "Welucci Sansu — Local" [ref=e142]
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: Local
+            - paragraph [ref=e145]: Welucci Sansu
+            - paragraph [ref=e146]: Araçoiaba da Serra, SP
+        - article [ref=e147]:
+          - img "Marina Arruda Weddings — Fotografia" [ref=e149]
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: Fotografia
+            - paragraph [ref=e152]: Marina Arruda Weddings
+            - paragraph [ref=e153]: São Paulo, SP
+        - article [ref=e154]:
+          - img "Ana Castello Buffet — Buffet" [ref=e156]
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: Buffet
+            - paragraph [ref=e159]: Ana Castello Buffet
+            - paragraph [ref=e160]: São Paulo, SP
+    - generic [ref=e162]:
+      - separator [ref=e163]:
+        - generic [ref=e165]: ◇
+      - paragraph [ref=e167]: Save the date
+      - paragraph [ref=e168]: Esperamos vocês em
+      - paragraph [ref=e169]: 14 de fevereiro de 2027
+      - paragraph [ref=e170]: Welucci Sansu
+      - paragraph [ref=e171]: Ilhabela, SP
+      - paragraph [ref=e172]:
+        - img [ref=e173]
+        - text: Uma celebração para 70 convidados
+    - generic [ref=e176]:
+      - paragraph [ref=e177]: Planejado com carinho pela
+      - link "we.wedme" [ref=e178] [cursor=pointer]:
+        - /url: /
+        - generic "we.wedme" [ref=e179]
+  - alert [ref=e180]

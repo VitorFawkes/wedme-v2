@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - img "Local do casamento de Ana e Pedro" [ref=e4]
+      - generic [ref=e6]:
+        - generic [ref=e7]: ◇
+        - paragraph [ref=e8]: Casamento
+        - heading "Ana & Pedro" [level=1] [ref=e9]:
+          - generic [ref=e10]: Ana
+          - generic [ref=e11]: "&"
+          - generic [ref=e12]: Pedro
+        - paragraph [ref=e13]: 14 de fevereiro de 2027
+        - paragraph [ref=e14]: Ilhabela, SP
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: Contagem regressiva
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: "313"
+        - paragraph [ref=e21]: dias
+      - paragraph [ref=e22]:
+        - text: Ou aproximadamente
+        - strong [ref=e23]: "10"
+        - text: meses e
+        - strong [ref=e24]: "13"
+        - text: dias
+    - generic [ref=e26]:
+      - separator [ref=e27]:
+        - generic [ref=e29]: ◇
+      - paragraph [ref=e31]: Nossa história
+      - heading "Como tudo começou" [level=2] [ref=e32]
+      - paragraph [ref=e33]: O que sonhamos
+      - blockquote [ref=e34]: “Queremos um casamento intimo ao entardecer, pe na areia, com a familia mais proxima.”
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - separator [ref=e38]:
+          - generic [ref=e40]: ◇
+        - paragraph [ref=e42]: Programação
+        - heading "O ritmo do dia" [level=2] [ref=e43]
+      - list [ref=e44]:
+        - listitem [ref=e45]:
+          - generic [ref=e48]:
+            - paragraph [ref=e49]: 16:00
+            - heading "Recepção" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Welcome drink e acolhida no jardim
+        - listitem [ref=e52]:
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: 17:00
+            - heading "Cerimônia" [level=3] [ref=e57]
+            - paragraph [ref=e58]: O momento que tudo muda
+        - listitem [ref=e59]:
+          - generic [ref=e62]:
+            - paragraph [ref=e63]: 18:00
+            - heading "Coquetel" [level=3] [ref=e64]
+            - paragraph [ref=e65]: Pra comer, beber e descansar os pés
+        - listitem [ref=e66]:
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: 20:00
+            - heading "Jantar" [level=3] [ref=e71]
+            - paragraph [ref=e72]: O menu que a gente escolheu com carinho
+        - listitem [ref=e73]:
+          - generic [ref=e75]:
+            - paragraph [ref=e76]: 22:00
+            - heading "Festa" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Pista aberta até dar conta
+    - generic [ref=e80]:
+      - separator [ref=e81]:
+        - generic [ref=e83]: ◇
+      - paragraph [ref=e85]: Save the date
+      - paragraph [ref=e86]: Esperamos vocês em
+      - paragraph [ref=e87]: 14 de fevereiro de 2027
+      - paragraph [ref=e88]: Ilhabela, SP
+      - paragraph [ref=e89]:
+        - img [ref=e90]
+        - text: Uma celebração para 120 convidados
+    - generic [ref=e93]:
+      - paragraph [ref=e94]: Planejado com carinho pela
+      - link "we.wedme" [ref=e95] [cursor=pointer]:
+        - /url: /
+        - generic "we.wedme" [ref=e96]
+  - alert [ref=e97]

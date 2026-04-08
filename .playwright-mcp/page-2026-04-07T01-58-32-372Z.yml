@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic "we.wedme" [ref=e5]
+      - progressbar "Progresso do onboarding" [ref=e8]
+    - generic [ref=e10]:
+      - article "Mensagem da assistente" [ref=e12]: Oi. Eu sou a assistente da we.wedme. Estou aqui para entender como vocês imaginam o casamento e montar um caminho feito sob medida. Topam começar com algumas perguntas rápidas?
+      - article "Sua mensagem" [ref=e14]: Topamos
+      - article "Mensagem da assistente" [ref=e16]:
+        - generic [ref=e17]: "Adoro essa animação, então vamos começar do começo. Quero saber quem são vocês: me conta os primeiros nomes dos noivos?"
+        - text: Quais são os primeiros nomes dos noivos?
+      - article "Sua mensagem" [ref=e19]: Somos Ana e Pedro, vamos casar em Ilhabela em fevereiro de 2027 com uns 120 convidados
+      - article "Mensagem da assistente" [ref=e21]:
+        - generic [ref=e22]: Ana e Pedro, que dupla linda — e Ilhabela em fevereiro é aquela vibe de verão gostosa, com mar e pôr do sol absurdo 🤍 E 120 convidados é um tamanho ótimo, dá pra ter festa animada sem perder o clima acolhedor.
+        - generic [ref=e23]: "Pra eu conseguir te indicar espaços e fornecedores no nível do que vocês estão sonhando, qual é mais ou menos o orçamento total que vocês imaginam investir no casamento (tudo incluso, tá: espaço, buffet, decoração, foto, música…)? Pode ser chute, tipo “uns 80 mil”, “até 150 mil”…"
+        - text: Qual é aproximadamente o orçamento total que vocês imaginam investir no casamento (somando espaço, buffet, decoração, foto, música, tudo)? Pode ser resposta redonda, tipo “uns 80 mil”, “entre 100 e 150 mil”…
+      - article "Sua mensagem" [ref=e25]: uns 80 mil
+      - article "Mensagem da assistente" [ref=e27]:
+        - generic [ref=e28]: "Uns 80 mil em Ilhabela com 120 pessoas dá pra fazer coisa muito linda, especialmente escolhendo bem espaço e buffet. Agora só falta um detalhe importante pra eu afinar ainda mais as sugestões: vocês já têm um e-mail pra eu deixar tudo registrado e conseguir te mandar referências depois?"
+        - text: Me passa o melhor e-mail de vocês (pode ser o de quem organiza mais as coisas por aí)?
+      - article "Sua mensagem" [ref=e30]: ana.pedro@email.com
+      - article "Sua mensagem" [ref=e48]: ana.pedro@email.com
+      - article "Mensagem da assistente" [ref=e50]:
+        - generic [ref=e51]: "Perfeito, Ana, e-mail anotado aqui. Agora vem a pergunta que mais importa de todas: que clima de casamento vocês sonham — mais pé na areia e despojado, algo rústico-chique em meio à natureza, ou uma pegada mais clássica mesmo em Ilhabela? 💛"
+        - text: "Me conta um pouco do clima/estilo que vocês imaginam pro casamento: mais despojado de praia, rústico-chique, clássico, festa bem balada… o que tem a cara de vocês?"
+      - button "Contar nosso sonho →" [ref=e53] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e39] [cursor=pointer]:
+    - img [ref=e40]
+  - alert [ref=e43]

@@ -1,0 +1,124 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Meu casamento" [ref=e4] [cursor=pointer]:
+        - /url: /meu-casamento
+        - generic "we.wedme" [ref=e5]
+      - generic "Casamento de Ana & Pedro" [ref=e6]:
+        - generic [ref=e7]: Ana & Pedro
+      - button "Reiniciar demo" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+        - generic [ref=e12]: Reiniciar
+  - status [ref=e13]:
+    - generic [ref=e15]:
+      - img [ref=e17]
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: 14 de fevereiro de 2027
+        - paragraph [ref=e22]: Este espaço tem esta data livre — mas tem outra proposta em aberto para o mesmo fim de semana. Normalmente definem em 72 horas.
+      - button "Fechar aviso" [ref=e23] [cursor=pointer]:
+        - img [ref=e24]
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - link "Voltar para Local" [ref=e29] [cursor=pointer]:
+        - /url: /planejamento/local
+        - img [ref=e30]
+        - text: Voltar para Local
+      - status [ref=e33]:
+        - generic [ref=e34]:
+          - img [ref=e36]
+          - generic [ref=e40]:
+            - heading "94% de match com o perfil de vocês" [level=3] [ref=e41]
+            - paragraph [ref=e42]: Nossa curadoria cruza Íntimo & Emocional + Ilhabela + o estilo do portfólio deste espaço. Não é horóscopo — é análise real de compatibilidade.
+          - button "Fechar" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+      - generic [ref=e47]:
+        - button "Abrir galeria" [ref=e48] [cursor=pointer]:
+          - img "Welucci Sansu — capa principal" [ref=e49]
+        - generic [ref=e50]:
+          - button "Foto 2" [ref=e51] [cursor=pointer]:
+            - img "Welucci Sansu — foto 2" [ref=e52]
+          - button "Foto 3" [ref=e53] [cursor=pointer]:
+            - img "Welucci Sansu — foto 3" [ref=e54]
+          - button "Foto 4" [ref=e55] [cursor=pointer]:
+            - img "Welucci Sansu — foto 4" [ref=e56]
+          - button "Foto 5" [ref=e57] [cursor=pointer]:
+            - img "Welucci Sansu — foto 5" [ref=e58]
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: Local
+          - heading "Welucci Sansu" [level=1] [ref=e62]
+          - paragraph [ref=e63]:
+            - generic [ref=e64]: Araçoiaba da Serra, SP
+            - generic [ref=e65]: ·
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - text: Verificado
+            - generic [ref=e69]: ·
+            - generic [ref=e70]:
+              - img [ref=e71]
+              - strong [ref=e73]: "4.9"
+            - generic [ref=e74]: ·
+            - generic [ref=e75]: 52 casamentos
+          - paragraph [ref=e78]: Welucci Sansu tem a única chapel de cristal do Brasil, emoldurada por um pôr do sol espetacular. Versátil para mini weddings ou grandes celebrações, é o cenário perfeito para quem sonha com o "sim" ao entardecer.
+          - paragraph [ref=e79]: CNPJ 00.000.000/0001-00
+          - generic [ref=e80]:
+            - generic [ref=e81]: Chapel de cristal único no Brasil
+            - generic [ref=e82]: Pôr do sol espetacular
+            - generic [ref=e83]: Mini e grandes weddings
+        - complementary [ref=e84]:
+          - generic [ref=e85]:
+            - paragraph [ref=e86]: Disponibilidade
+            - paragraph [ref=e87]: ✓ Disponível para 14 de fevereiro de 2027
+            - paragraph [ref=e89]: A partir de
+            - paragraph [ref=e90]: R$ 28.000
+            - link "Ver pacotes →" [ref=e91] [cursor=pointer]:
+              - /url: "#pacotes"
+      - generic [ref=e92]:
+        - heading "Pacotes disponíveis" [level=2] [ref=e93]
+        - generic [ref=e94]:
+          - article [ref=e95]:
+            - heading "Pacote Essencial" [level=3] [ref=e96]
+            - paragraph [ref=e97]: R$ 28.000
+            - paragraph [ref=e98]: Valor de referência
+            - list [ref=e99]:
+              - listitem [ref=e100]:
+                - img [ref=e101]
+                - generic [ref=e103]: Locação por 10h
+              - listitem [ref=e104]:
+                - img [ref=e105]
+                - generic [ref=e107]: Chapel de cristal
+            - button "✓ Pacote escolhido" [ref=e108] [cursor=pointer]
+          - article [ref=e109]:
+            - heading "Pacote Premium" [level=3] [ref=e110]
+            - paragraph [ref=e111]: R$ 48.000
+            - paragraph [ref=e112]: Valor de referência
+            - list [ref=e113]:
+              - listitem [ref=e114]:
+                - img [ref=e115]
+                - generic [ref=e117]: Locação por 14h
+              - listitem [ref=e118]:
+                - img [ref=e119]
+                - generic [ref=e121]: Suíte
+              - listitem [ref=e122]:
+                - img [ref=e123]
+                - generic [ref=e125]: Welcome drink
+            - button "Quero este pacote →" [ref=e126] [cursor=pointer]
+      - generic [ref=e127]:
+        - heading "Trabalhos realizados" [level=2] [ref=e128]
+        - generic [ref=e129]:
+          - button "Foto 1 de 6" [ref=e130] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 1" [ref=e131]
+          - button "Foto 2 de 6" [ref=e132] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 2" [ref=e133]
+          - button "Foto 3 de 6" [ref=e134] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 3" [ref=e135]
+          - button "Foto 4 de 6" [ref=e136] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 4" [ref=e137]
+          - button "Foto 5 de 6" [ref=e138] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 5" [ref=e139]
+          - button "Foto 6 de 6" [ref=e140] [cursor=pointer]:
+            - img "Welucci Sansu — trabalho 6" [ref=e141]
+  - button "Falar com um especialista" [ref=e143] [cursor=pointer]:
+    - img [ref=e144]
+    - generic [ref=e146]: Falar com especialista
+  - alert [ref=e147]

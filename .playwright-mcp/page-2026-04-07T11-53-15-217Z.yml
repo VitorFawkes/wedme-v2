@@ -1,0 +1,235 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "we.wedme — voltar para a home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic "we.wedme" [ref=e5]
+      - link "Meu casamento" [ref=e6] [cursor=pointer]:
+        - /url: /meu-casamento
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - img "Welucci Estaiada — vista para a Ponte Estaiada de São Paulo" [ref=e9]
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: Curadoria de casamentos
+        - heading "Seu casamento dos sonhos, do início ao fim" [level=1] [ref=e13]:
+          - text: Seu casamento
+          - text: dos sonhos,
+          - text: do início ao fim
+        - paragraph [ref=e14]: A gente cuida dos profissionais. Vocês cuidam do sonho.
+        - link "Planejar meu casamento" [ref=e16] [cursor=pointer]:
+          - /url: /comece
+        - paragraph [ref=e17]: Três minutos e a jornada de vocês começa.
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Como funciona
+        - heading "Um jeito novo de casar" [level=2] [ref=e22]
+        - paragraph [ref=e23]: Sem planilhas, sem ligações, sem estresse. Três passos, e acabou.
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - img [ref=e27]
+          - heading "Vocês contam o sonho" [level=3] [ref=e30]
+          - paragraph [ref=e31]: Uma assistente entende como vocês imaginam o casamento — por texto ou por áudio. Sem formulário, sem dropdown infinito.
+        - generic [ref=e32]:
+          - img [ref=e34]
+          - heading "Nós montamos o caminho" [level=3] [ref=e37]
+          - paragraph [ref=e38]: A partir do sonho de vocês, a plataforma sabe quais categorias importam, em qual ordem, e quais profissionais fazem sentido. Curadoria de verdade.
+        - generic [ref=e39]:
+          - img [ref=e41]
+          - heading "Vocês escolhem, a gente executa" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Comparem, selecionem, confirmem. Tudo online. Dos contratos à comunicação com cada profissional, quem resolve somos nós.
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: "1.247"
+        - paragraph [ref=e49]: Casais realizados
+      - generic [ref=e50]:
+        - paragraph [ref=e51]: "320"
+        - paragraph [ref=e52]: Profissionais curados
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: 4.9★
+        - paragraph [ref=e55]: Avaliação média
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: Locais parceiros
+        - heading "13 espaços Welucci para o grande dia" [level=2] [ref=e60]:
+          - text: 13 espaços Welucci
+          - text: para o grande dia
+        - paragraph [ref=e61]: Dos cartões-postais de São Paulo à beira-mar no Guarujá.
+      - generic [ref=e62]:
+        - link "Welucci Estaiada — O seu casamento em um cartão postal de São Paulo São Paulo, SP Welucci Estaiada O seu casamento em um cartão postal de São Paulo Vista para Ponte Estaiada Arquitetura moderna e versátil" [ref=e63] [cursor=pointer]:
+          - /url: /oferta/welucci-estaiada
+          - img "Welucci Estaiada — O seu casamento em um cartão postal de São Paulo" [ref=e65]
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: São Paulo, SP
+            - heading "Welucci Estaiada" [level=3] [ref=e68]
+            - paragraph [ref=e69]: O seu casamento em um cartão postal de São Paulo
+            - generic [ref=e70]:
+              - generic [ref=e71]: Vista para Ponte Estaiada
+              - generic [ref=e72]: Arquitetura moderna e versátil
+        - link "Pátio Welucci — O espaço à altura das histórias que merecem ser celebradas São Paulo, SP Pátio Welucci O espaço à altura das histórias que merecem ser celebradas Design contemporâneo Integração interno/externo" [ref=e73] [cursor=pointer]:
+          - /url: /oferta/patio-welucci
+          - img "Pátio Welucci — O espaço à altura das histórias que merecem ser celebradas" [ref=e75]
+          - generic [ref=e76]:
+            - paragraph [ref=e77]: São Paulo, SP
+            - heading "Pátio Welucci" [level=3] [ref=e78]
+            - paragraph [ref=e79]: O espaço à altura das histórias que merecem ser celebradas
+            - generic [ref=e80]:
+              - generic [ref=e81]: Design contemporâneo
+              - generic [ref=e82]: Integração interno/externo
+        - link "Welucci Gardens — O espaço que transformou o conceito de casar em São Paulo São Paulo, SP Welucci Gardens O espaço que transformou o conceito de casar em São Paulo SPA exclusivo para noiva Jardins cinematográficos" [ref=e83] [cursor=pointer]:
+          - /url: /oferta/welucci-gardens
+          - img "Welucci Gardens — O espaço que transformou o conceito de casar em São Paulo" [ref=e85]
+          - generic [ref=e86]:
+            - paragraph [ref=e87]: São Paulo, SP
+            - heading "Welucci Gardens" [level=3] [ref=e88]
+            - paragraph [ref=e89]: O espaço que transformou o conceito de casar em São Paulo
+            - generic [ref=e90]:
+              - generic [ref=e91]: SPA exclusivo para noiva
+              - generic [ref=e92]: Jardins cinematográficos
+        - link "Welucci The One — A essência da elegância contemporânea no seu casamento São Paulo, SP Welucci The One A essência da elegância contemporânea no seu casamento Arquitetura autoral Jardim vertical" [ref=e93] [cursor=pointer]:
+          - /url: /oferta/welucci-the-one
+          - img "Welucci The One — A essência da elegância contemporânea no seu casamento" [ref=e95]
+          - generic [ref=e96]:
+            - paragraph [ref=e97]: São Paulo, SP
+            - heading "Welucci The One" [level=3] [ref=e98]
+            - paragraph [ref=e99]: A essência da elegância contemporânea no seu casamento
+            - generic [ref=e100]:
+              - generic [ref=e101]: Arquitetura autoral
+              - generic [ref=e102]: Jardim vertical
+        - link "Welucci Vila Real — Cercado por verde, luz natural e beleza em cada detalhe Embu das Artes, SP Welucci Vila Real Cercado por verde, luz natural e beleza em cada detalhe 16.000 m² de área verde Cerimônia ao ar livre" [ref=e103] [cursor=pointer]:
+          - /url: /oferta/welucci-vila-real
+          - img "Welucci Vila Real — Cercado por verde, luz natural e beleza em cada detalhe" [ref=e105]
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: Embu das Artes, SP
+            - heading "Welucci Vila Real" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Cercado por verde, luz natural e beleza em cada detalhe
+            - generic [ref=e110]:
+              - generic [ref=e111]: 16.000 m² de área verde
+              - generic [ref=e112]: Cerimônia ao ar livre
+        - link "Welucci Fagundes — Onde o início da sua história encontra séculos de tradição Mairiporã, SP Welucci Fagundes Onde o início da sua história encontra séculos de tradição Casarão colonial 1730–1750 Deck com vista para lago" [ref=e113] [cursor=pointer]:
+          - /url: /oferta/welucci-fagundes
+          - img "Welucci Fagundes — Onde o início da sua história encontra séculos de tradição" [ref=e115]
+          - generic [ref=e116]:
+            - paragraph [ref=e117]: Mairiporã, SP
+            - heading "Welucci Fagundes" [level=3] [ref=e118]
+            - paragraph [ref=e119]: Onde o início da sua história encontra séculos de tradição
+            - generic [ref=e120]:
+              - generic [ref=e121]: Casarão colonial 1730–1750
+              - generic [ref=e122]: Deck com vista para lago
+      - button "Ver todos os 13 espaços →" [ref=e124] [cursor=pointer]
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - paragraph [ref=e128]: Depoimentos
+        - heading "Casais que já celebraram com a gente" [level=2] [ref=e129]:
+          - text: Casais que já celebraram
+          - text: com a gente
+      - generic [ref=e130]:
+        - article [ref=e131]:
+          - generic [ref=e132]:
+            - generic [ref=e133]: AP
+            - generic [ref=e134]:
+              - paragraph [ref=e135]: Ana & Pedro
+              - paragraph [ref=e136]: São Paulo, SP · março de 2025
+          - blockquote [ref=e137]: “A we.wedme transformou o que seria estresse em pura emoção. Escolhemos tudo em duas semanas — e no dia, foi perfeito.”
+          - generic "5 estrelas" [ref=e138]:
+            - img [ref=e139]
+            - img [ref=e141]
+            - img [ref=e143]
+            - img [ref=e145]
+            - img [ref=e147]
+        - article [ref=e149]:
+          - generic [ref=e150]:
+            - generic [ref=e151]: ML
+            - generic [ref=e152]:
+              - paragraph [ref=e153]: Maria & Lucas
+              - paragraph [ref=e154]: Campinas, SP · agosto de 2025
+          - blockquote [ref=e155]: “Nem acredito que planejamos nosso casamento sem precisar falar com mil fornecedores. Cada detalhe foi cuidado pela equipe.”
+          - generic "5 estrelas" [ref=e156]:
+            - img [ref=e157]
+            - img [ref=e159]
+            - img [ref=e161]
+            - img [ref=e163]
+            - img [ref=e165]
+        - article [ref=e167]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: JR
+            - generic [ref=e170]:
+              - paragraph [ref=e171]: Julia & Rafael
+              - paragraph [ref=e172]: Guarujá, SP · janeiro de 2026
+          - blockquote [ref=e173]: “Nosso casamento pé na areia foi mágico. A curadoria acertou em cheio — cada profissional entendeu o que a gente sonhava.”
+          - generic "5 estrelas" [ref=e174]:
+            - img [ref=e175]
+            - img [ref=e177]
+            - img [ref=e179]
+            - img [ref=e181]
+            - img [ref=e183]
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - paragraph [ref=e188]: Dúvidas frequentes
+        - heading "Perguntas frequentes" [level=2] [ref=e189]
+      - region [ref=e190]:
+        - heading "Como vocês escolhem os profissionais?" [level=3] [ref=e192]:
+          - button "Como vocês escolhem os profissionais?" [ref=e193] [cursor=pointer]:
+            - text: Como vocês escolhem os profissionais?
+            - img
+        - heading "Preciso falar diretamente com os profissionais?" [level=3] [ref=e195]:
+          - button "Preciso falar diretamente com os profissionais?" [ref=e196] [cursor=pointer]:
+            - text: Preciso falar diretamente com os profissionais?
+            - img
+        - heading "E se algum imprevisto acontecer no meu dia?" [level=3] [ref=e198]:
+          - button "E se algum imprevisto acontecer no meu dia?" [ref=e199] [cursor=pointer]:
+            - text: E se algum imprevisto acontecer no meu dia?
+            - img
+        - heading "Como funciona o pagamento?" [level=3] [ref=e201]:
+          - button "Como funciona o pagamento?" [ref=e202] [cursor=pointer]:
+            - text: Como funciona o pagamento?
+            - img
+        - heading "Posso montar o casamento aos poucos?" [level=3] [ref=e204]:
+          - button "Posso montar o casamento aos poucos?" [ref=e205] [cursor=pointer]:
+            - text: Posso montar o casamento aos poucos?
+            - img
+  - contentinfo [ref=e206]:
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - generic [ref=e209]:
+          - generic "we.wedme" [ref=e210]
+          - paragraph [ref=e211]: Curadoria de casamentos para casais que querem celebrar sem renunciar ao essencial.
+        - generic [ref=e212]:
+          - paragraph [ref=e213]: Plataforma
+          - list [ref=e214]:
+            - listitem [ref=e215]:
+              - link "Como funciona" [ref=e216] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e217]:
+              - link "Espaços parceiros" [ref=e218] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e219]:
+              - link "Depoimentos" [ref=e220] [cursor=pointer]:
+                - /url: /
+        - generic [ref=e221]:
+          - paragraph [ref=e222]: Institucional
+          - list [ref=e223]:
+            - listitem [ref=e224]:
+              - link "Sobre nós" [ref=e225] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e226]:
+              - link "Curadoria" [ref=e227] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e228]:
+              - link "Garantia we.wedme" [ref=e229] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e230]:
+          - paragraph [ref=e231]: Contato
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "Atendimento" [ref=e234] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e235]:
+              - link "Imprensa" [ref=e236] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e237]:
+              - link "Trabalhe conosco" [ref=e238] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e239]:
+        - paragraph [ref=e240]: © 2026 we.wedme. Todos os direitos reservados.
+        - paragraph [ref=e241]: Feito com carinho em São Paulo, Brasil.
+  - alert [ref=e242]

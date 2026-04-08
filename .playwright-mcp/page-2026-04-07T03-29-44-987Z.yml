@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic "we.wedme" [ref=e5]
+        - paragraph [ref=e6]: Atalho de QA
+        - heading "Carregar sessão mockada" [level=1] [ref=e7]
+        - paragraph [ref=e8]: Atalho de desenvolvimento para testar páginas internas sem refazer o onboarding. Escolha um cenário pra carregar tudo de uma vez.
+      - generic [ref=e9]:
+        - button "Íntimo & Emocional Casal Íntimo & Emocional pronto pra checkout Ana & Pedro, Ilhabela, 3 escolhas (local + foto + buffet) Carregar →" [ref=e10] [cursor=pointer]:
+          - paragraph [ref=e11]: Íntimo & Emocional
+          - heading "Casal Íntimo & Emocional pronto pra checkout" [level=2] [ref=e12]
+          - paragraph [ref=e13]: Ana & Pedro, Ilhabela, 3 escolhas (local + foto + buffet)
+          - paragraph [ref=e14]: Carregar →
+        - button "Clássico Atemporal Casal Clássico Atemporal começando Maria & Lucas, São Paulo, sem escolhas ainda Carregar →" [ref=e15] [cursor=pointer]:
+          - paragraph [ref=e16]: Clássico Atemporal
+          - heading "Casal Clássico Atemporal começando" [level=2] [ref=e17]
+          - paragraph [ref=e18]: Maria & Lucas, São Paulo, sem escolhas ainda
+          - paragraph [ref=e19]: Carregar →
+        - button "Natureza & Destination Casal Natureza & Destination no meio Júlia & Rafael, Trancoso, 2 escolhas Carregar →" [ref=e20] [cursor=pointer]:
+          - paragraph [ref=e21]: Natureza & Destination
+          - heading "Casal Natureza & Destination no meio" [level=2] [ref=e22]
+          - paragraph [ref=e23]: Júlia & Rafael, Trancoso, 2 escolhas
+          - paragraph [ref=e24]: Carregar →
+        - button "Grande Celebração Casal Grande Celebração quase fechando Vanessa & Eduardo, SP, 5 escolhas Carregar →" [ref=e25] [cursor=pointer]:
+          - paragraph [ref=e26]: Grande Celebração
+          - heading "Casal Grande Celebração quase fechando" [level=2] [ref=e27]
+          - paragraph [ref=e28]: Vanessa & Eduardo, SP, 5 escolhas
+          - paragraph [ref=e29]: Carregar →
+      - generic [ref=e30]:
+        - button "Limpar tudo e voltar à home" [ref=e31] [cursor=pointer]
+        - link "Começar do zero (real)" [ref=e32] [cursor=pointer]:
+          - /url: /comece
+      - paragraph [ref=e33]: Esta página é só pra desenvolvimento. Não fica visível em produção.
+  - alert [ref=e34]
