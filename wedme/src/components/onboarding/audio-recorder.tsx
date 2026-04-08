@@ -193,7 +193,7 @@ export function AudioRecorder({
                 type="button"
                 onClick={startRecording}
                 aria-label="Iniciar gravação"
-                className="flex items-center justify-center w-24 h-24 rounded-full bg-primary text-primary-foreground hover:bg-brand-wine transition-colors duration-200 active:scale-95"
+                className="flex items-center justify-center w-24 h-24 rounded-full bg-primary text-primary-foreground hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out active:scale-95"
               >
                 <Mic className="size-9" />
               </button>

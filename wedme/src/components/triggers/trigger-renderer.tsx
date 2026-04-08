@@ -145,6 +145,9 @@ export function useTriggers(filter?: {
 }): readonly EvaluatedTrigger[] {
   const pathname = usePathname();
 
+  // Sem onboarding completo, sem triggers
+  const onboardingComplete = useCouple((s) => s.onboarding_complete);
+
   // Selecionar campos relevantes do store de forma seletiva (Zustand fast path)
   const partner_1_name = useCouple((s) => s.partner_1_name);
   const partner_2_name = useCouple((s) => s.partner_2_name);
@@ -162,6 +165,8 @@ export function useTriggers(filter?: {
   const journey_started_at = useCouple((s) => s.journey_started_at);
 
   return useMemo(() => {
+    if (!onboardingComplete) return [];
+
     const all = evaluateTriggers({
       partner_1_name,
       partner_2_name,
@@ -184,6 +189,7 @@ export function useTriggers(filter?: {
     }
     return all;
   }, [
+    onboardingComplete,
     partner_1_name,
     partner_2_name,
     city,

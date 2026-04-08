@@ -605,7 +605,7 @@ export default function ComecePage() {
               <button
                 type="button"
                 onClick={handleStartText}
-                className="inline-flex items-center justify-center min-h-12 px-7 py-3 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200"
+                className="inline-flex items-center justify-center min-h-12 px-7 py-3 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
               >
                 Responder por texto
               </button>
@@ -663,7 +663,7 @@ export default function ComecePage() {
                 <button
                   type="button"
                   onClick={() => router.push("/planejamento")}
-                  className="inline-flex items-center justify-center min-h-14 px-8 md:px-10 py-4 rounded-sm bg-primary text-primary-foreground text-base md:text-lg font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200 mt-4"
+                  className="inline-flex items-center justify-center min-h-14 px-8 md:px-10 py-4 rounded-md bg-primary text-primary-foreground text-base md:text-lg font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out mt-4"
                 >
                   Ver o caminho que montamos →
                 </button>
@@ -712,7 +712,7 @@ export default function ComecePage() {
             <button
               type="submit"
               disabled={isLoading || !inputValue.trim()}
-              className="shrink-0 inline-flex items-center justify-center min-w-11 min-h-11 rounded-sm bg-primary text-primary-foreground hover:bg-brand-wine transition-colors duration-200 disabled:opacity-40 disabled:pointer-events-none"
+              className="shrink-0 inline-flex items-center justify-center min-w-11 min-h-11 rounded-md bg-primary text-primary-foreground hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out disabled:opacity-40 disabled:pointer-events-none"
               aria-label="Enviar mensagem"
             >
               <svg
@@ -759,7 +759,7 @@ export default function ComecePage() {
                   <button
                     type="button"
                     onClick={inlineSendRecording}
-                    className="flex-1 inline-flex items-center justify-center gap-2 min-h-12 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200"
+                    className="flex-1 inline-flex items-center justify-center gap-2 min-h-12 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
                   >
                     <Send className="size-4" />
                     Enviar
@@ -795,7 +795,7 @@ export default function ComecePage() {
                 <button
                   type="button"
                   onClick={inlineStartRecording}
-                  className="w-full inline-flex items-center justify-center gap-3 min-h-14 px-8 py-4 rounded-sm bg-primary text-primary-foreground text-base font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200"
+                  className="w-full inline-flex items-center justify-center gap-3 min-h-14 px-8 py-4 rounded-md bg-primary text-primary-foreground text-base font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
                 >
                   <Mic className="size-5" />
                   Gravar áudio
@@ -834,7 +834,7 @@ export default function ComecePage() {
                 type="button"
                 onClick={handleDreamSubmit}
                 disabled={dreamText.trim().length < 20}
-                className="flex-1 inline-flex items-center justify-center min-h-12 px-6 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200 disabled:opacity-40 disabled:pointer-events-none"
+                className="flex-1 inline-flex items-center justify-center min-h-12 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out disabled:opacity-40 disabled:pointer-events-none"
               >
                 Enviar →
               </button>

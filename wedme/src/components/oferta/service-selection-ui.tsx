@@ -203,7 +203,7 @@ export function ServiceSelectionUI({
           <button
             onClick={handleConfirm}
             disabled={!hasBaseItem}
-            className="min-h-11 px-6 py-3 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200 disabled:opacity-50 disabled:pointer-events-none"
+            className="min-h-11 px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out disabled:opacity-50 disabled:pointer-events-none"
           >
             Confirmar seleção
           </button>

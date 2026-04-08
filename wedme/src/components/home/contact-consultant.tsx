@@ -31,7 +31,7 @@ export function ContactConsultant() {
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
               <a
                 href="tel:+554199876543"
-                className="inline-flex items-center justify-center gap-2 min-h-11 px-6 py-3 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200"
+                className="inline-flex items-center justify-center gap-2 min-h-11 px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
               >
                 <Phone className="w-4 h-4" />
                 (41) 99876-5432
@@ -40,7 +40,7 @@ export function ContactConsultant() {
                 href="https://wa.me/554199876543"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 min-h-11 px-6 py-3 rounded-sm border border-primary bg-transparent text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                className="inline-flex items-center justify-center gap-2 min-h-11 px-6 py-3 rounded-md border border-primary/40 bg-transparent text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
               >
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp

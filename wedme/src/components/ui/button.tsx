@@ -16,18 +16,18 @@ import { cn } from "@/lib/utils";
  * - hover bg-brand-wine no primary
  */
 const buttonVariants = cva(
-  "inline-flex shrink-0 items-center justify-center gap-2 rounded-sm font-sans font-medium tracking-wide whitespace-nowrap transition-colors duration-200 outline-none select-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "inline-flex shrink-0 items-center justify-center gap-2 rounded-md font-sans font-medium tracking-wide whitespace-nowrap transition-all duration-300 ease-out outline-none select-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
         primary:
-          "bg-primary text-primary-foreground hover:bg-brand-wine active:bg-brand-wine",
+          "bg-primary text-primary-foreground shadow-md shadow-primary/25 hover:bg-brand-wine hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-[1px] active:translate-y-0 active:shadow-sm active:bg-brand-wine",
         outline:
-          "border border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
+          "border border-primary/40 bg-transparent text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md hover:shadow-primary/20 hover:-translate-y-[1px] active:translate-y-0",
         ghost:
-          "bg-transparent text-foreground hover:text-primary hover:bg-accent/50",
+          "bg-transparent text-foreground hover:text-primary hover:bg-accent/60 active:bg-accent",
         muted:
-          "bg-muted text-foreground hover:bg-accent",
+          "bg-muted text-foreground hover:bg-accent active:bg-accent/80",
         link:
           "text-primary underline-offset-4 hover:underline px-0 py-0 min-h-0",
       },

@@ -239,7 +239,7 @@ export function OfertaClient({ slug }: { slug: string }) {
 
                 <a
                   href="#servicos"
-                  className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
+                  className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
                 >
                   Ver serviços →
                 </a>
@@ -301,7 +301,7 @@ export function OfertaClient({ slug }: { slug: string }) {
                         handleSelectPackage(pkg.id);
                       }}
                       disabled={confirmingPackage}
-                      className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors disabled:opacity-50"
+                      className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors disabled:opacity-50"
                     >
                       {confirmingPackage && isSelected
                         ? "Salvando…"
@@ -439,7 +439,7 @@ export function OfertaClient({ slug }: { slug: string }) {
           </div>
           <a
             href="#servicos"
-            className="shrink-0 inline-flex items-center justify-center min-h-12 px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
+            className="shrink-0 inline-flex items-center justify-center min-h-12 px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
           >
             Ver serviços →
           </a>

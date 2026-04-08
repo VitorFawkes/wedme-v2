@@ -44,58 +44,58 @@
 }
 
 :root {
-  /* Paleta we.wedme — rosa/pink (ref. protótipo visual) */
-  --background: #FEFAF3;          /* creme quente */
-  --foreground: #0C0106;          /* preto quase-bordeaux */
+  /* Paleta we.wedme — rosa coral premium (ref. protótipo visual) */
+  --background: #FFFFFF;           /* branco puro */
+  --foreground: #1A1A1A;           /* preto suave */
   --card: #FFFFFF;
-  --card-foreground: #0C0106;
+  --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
-  --popover-foreground: #0C0106;
-  --primary: #D4869C;             /* soft rose */
+  --popover-foreground: #1A1A1A;
+  --primary: #E07A8A;              /* rosa coral (botões) */
   --primary-foreground: #FFFFFF;
-  --secondary: #FAEDD2;           /* bege quente */
-  --secondary-foreground: #0C0106;
-  --muted: #FAEDD2;
-  --muted-foreground: #777777;
-  --accent: #F5E8EF;              /* very light pink */
-  --accent-foreground: #0C0106;
-  --destructive: #B0342A;
-  --border: #E0C5CF;              /* soft pink border */
-  --input: #E0C5CF;
-  --ring: #D4869C;
+  --secondary: #FBF5F3;            /* off-white rosado */
+  --secondary-foreground: #1A1A1A;
+  --muted: #F7F2F0;                /* cinza rosado claro */
+  --muted-foreground: #888888;
+  --accent: #FDF0EE;               /* rosa muito claro */
+  --accent-foreground: #1A1A1A;
+  --destructive: #D32F2F;
+  --border: #E8DDD9;               /* cinza quente suave */
+  --input: #E8DDD9;
+  --ring: #E07A8A;
 
-  --brand-wine: #B56B7E;          /* hover do botão primário (rose hover) */
-  --brand-rose: #E8A0BF;          /* acento secundário, ornamentos */
+  --brand-wine: #C4606F;           /* hover do botão primário */
+  --brand-rose: #F2A5B0;           /* acento secundário */
 
-  --radius: 0.25rem;
+  --radius: 0.5rem;
 
-  /* Overlays sobre foto (briefing §3.1) */
-  --overlay-dark-60: rgba(12, 1, 6, 0.60);
-  --overlay-dark-80: rgba(12, 1, 6, 0.80);
+  /* Overlays sobre foto */
+  --overlay-dark-60: rgba(0, 0, 0, 0.55);
+  --overlay-dark-80: rgba(0, 0, 0, 0.75);
 }
 
 /* Sem dark mode — protótipo é só light, mas mantido para shadcn não quebrar */
 .dark {
-  --background: #FEFAF3;
-  --foreground: #0C0106;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
   --card: #FFFFFF;
-  --card-foreground: #0C0106;
+  --card-foreground: #1A1A1A;
   --popover: #FFFFFF;
-  --popover-foreground: #0C0106;
-  --primary: #D4869C;
+  --popover-foreground: #1A1A1A;
+  --primary: #E07A8A;
   --primary-foreground: #FFFFFF;
-  --secondary: #FAEDD2;
-  --secondary-foreground: #0C0106;
-  --muted: #FAEDD2;
-  --muted-foreground: #777777;
-  --accent: #F5E8EF;
-  --accent-foreground: #0C0106;
-  --destructive: #B0342A;
-  --border: #E0C5CF;
-  --input: #E0C5CF;
-  --ring: #D4869C;
-  --brand-wine: #B56B7E;
-  --brand-rose: #E8A0BF;
+  --secondary: #FBF5F3;
+  --secondary-foreground: #1A1A1A;
+  --muted: #F7F2F0;
+  --muted-foreground: #888888;
+  --accent: #FDF0EE;
+  --accent-foreground: #1A1A1A;
+  --destructive: #D32F2F;
+  --border: #E8DDD9;
+  --input: #E8DDD9;
+  --ring: #E07A8A;
+  --brand-wine: #C4606F;
+  --brand-rose: #F2A5B0;
 }
 
 /* ============================================================
@@ -119,6 +119,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
   }
 
   body {

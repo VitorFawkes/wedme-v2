@@ -47,7 +47,7 @@ export function ProgressFooter() {
         </div>
         <Link
           href="/meu-casamento"
-          className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200 w-full sm:w-auto"
+          className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out w-full sm:w-auto"
         >
           Ir ao meu casamento →
         </Link>

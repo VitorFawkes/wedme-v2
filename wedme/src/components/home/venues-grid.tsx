@@ -85,7 +85,7 @@ export function VenuesGrid() {
             <button
               type="button"
               onClick={() => setExpanded(true)}
-              className="inline-flex items-center justify-center min-h-12 px-7 py-3.5 rounded-sm border border-primary text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+              className="inline-flex items-center justify-center min-h-12 px-7 py-3.5 rounded-md border border-primary/40 text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
             >
               Ver todos os {venues.length} espaços →
             </button>

@@ -226,7 +226,7 @@ function ExistingSelectionBanner({
       <div className="flex flex-row gap-2 w-full sm:w-auto">
         <Link
           href={`/oferta/${vendor.slug}`}
-          className="inline-flex items-center justify-center min-h-11 px-4 rounded-sm border border-primary text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors flex-1 sm:flex-initial"
+          className="inline-flex items-center justify-center min-h-11 px-4 rounded-md border border-primary/40 text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors flex-1 sm:flex-initial"
         >
           Ver detalhes
         </Link>

@@ -184,7 +184,7 @@ export function PersonalizeSite() {
                   <span className="font-display text-xl text-foreground tabular-nums">{timeDisplay}</span>
                   <div className="flex gap-2 w-full">
                     <button type="button" onClick={resumeRec} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-sm border border-border bg-card text-foreground text-xs font-medium hover:border-primary transition-colors"><Play className="size-4" /> Retomar</button>
-                    <button type="button" onClick={sendRec} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-sm bg-primary text-primary-foreground text-xs font-medium hover:bg-brand-wine transition-colors"><Send className="size-3.5" /> Enviar</button>
+                    <button type="button" onClick={sendRec} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-md bg-primary text-primary-foreground text-xs font-medium hover:bg-brand-wine transition-colors"><Send className="size-3.5" /> Enviar</button>
                     <button type="button" onClick={() => restartRec("song")} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-sm border border-border bg-card text-foreground text-xs font-medium hover:border-primary transition-colors"><Mic className="size-3.5" /> Recomeçar</button>
                   </div>
                 </>
@@ -199,7 +199,7 @@ export function PersonalizeSite() {
             <div className="mt-3">
               <input type="text" value={songDraft} onChange={(e) => setSongDraft(e.target.value)} placeholder="Ex: At Last, Etta James" autoFocus style={{ fontSize: "16px" }} className="w-full h-12 rounded-sm border border-border bg-background px-4 text-base text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary" onKeyDown={(e) => { if (e.key === "Enter") saveSong(); if (e.key === "Escape") setEditingSong(false); }} />
               <div className="flex gap-2 mt-3">
-                <button type="button" onClick={saveSong} className="inline-flex items-center justify-center gap-1.5 min-h-10 px-4 rounded-sm bg-primary text-primary-foreground text-xs font-medium tracking-wide hover:bg-brand-wine transition-colors"><Check className="size-3.5" /> Salvar</button>
+                <button type="button" onClick={saveSong} className="inline-flex items-center justify-center gap-1.5 min-h-10 px-4 rounded-md bg-primary text-primary-foreground text-xs font-medium tracking-wide hover:bg-brand-wine transition-colors"><Check className="size-3.5" /> Salvar</button>
                 <button type="button" onClick={() => setEditingSong(false)} className="inline-flex items-center justify-center min-h-10 px-4 text-xs text-muted-foreground hover:text-foreground transition-colors">Cancelar</button>
               </div>
             </div>
@@ -243,7 +243,7 @@ export function PersonalizeSite() {
                   <span className="font-display text-xl text-foreground tabular-nums">{timeDisplay}</span>
                   <div className="flex gap-2 w-full">
                     <button type="button" onClick={resumeRec} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-sm border border-border bg-card text-foreground text-xs font-medium hover:border-primary transition-colors"><Play className="size-4" /> Retomar</button>
-                    <button type="button" onClick={sendRec} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-sm bg-primary text-primary-foreground text-xs font-medium hover:bg-brand-wine transition-colors"><Send className="size-3.5" /> Enviar</button>
+                    <button type="button" onClick={sendRec} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-md bg-primary text-primary-foreground text-xs font-medium hover:bg-brand-wine transition-colors"><Send className="size-3.5" /> Enviar</button>
                     <button type="button" onClick={() => restartRec("story")} className="flex-1 inline-flex items-center justify-center gap-1.5 min-h-10 rounded-sm border border-border bg-card text-foreground text-xs font-medium hover:border-primary transition-colors"><Mic className="size-3.5" /> Recomeçar</button>
                   </div>
                 </>
@@ -266,7 +266,7 @@ export function PersonalizeSite() {
                 className="w-full rounded-sm border border-border bg-background px-4 py-3 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary leading-relaxed resize-none"
               />
               <div className="flex gap-2 mt-3">
-                <button type="button" onClick={saveStory} className="inline-flex items-center justify-center gap-1.5 min-h-10 px-4 rounded-sm bg-primary text-primary-foreground text-xs font-medium tracking-wide hover:bg-brand-wine transition-colors"><Check className="size-3.5" /> Salvar</button>
+                <button type="button" onClick={saveStory} className="inline-flex items-center justify-center gap-1.5 min-h-10 px-4 rounded-md bg-primary text-primary-foreground text-xs font-medium tracking-wide hover:bg-brand-wine transition-colors"><Check className="size-3.5" /> Salvar</button>
                 <button type="button" onClick={() => setEditingStory(false)} className="inline-flex items-center justify-center min-h-10 px-4 text-xs text-muted-foreground hover:text-foreground transition-colors">Cancelar</button>
               </div>
             </div>

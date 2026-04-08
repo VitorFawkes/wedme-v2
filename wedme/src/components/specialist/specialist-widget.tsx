@@ -175,7 +175,7 @@ export function SpecialistWidget() {
         className="fixed z-40 safe-bottom bottom-24 left-4 md:bottom-6 md:right-6 md:left-auto"
       >
         <div
-          className={`group relative flex items-center rounded-full bg-foreground text-background shadow-lg hover:bg-brand-wine transition-colors duration-200 ${
+          className={`group relative flex items-center rounded-full bg-foreground text-background shadow-lg hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out ${
             minimized ? "size-12" : "min-h-12 pl-2 pr-1"
           }`}
         >
