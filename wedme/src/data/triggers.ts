@@ -238,24 +238,4 @@ export const triggers: readonly TriggerRule[] = [
     },
   },
 
-  // ============================================================
-  // 12. AGENDA CONCORRIDA — escassez de venue
-  // ============================================================
-  {
-    slug: "agenda-concorrida",
-    name: "Venue com alta procura no mês do casamento",
-    priority: 75,
-    once: false,
-    position: "top_bar",
-    style: "subtle",
-    conditions: [
-      { type: "wedding_date_set" },
-      { type: "on_route", pattern: "/oferta/" },
-    ],
-    content: {
-      icon: "CalendarClock",
-      title: "Alta procura",
-      body: "{Este_tipo} tem alta procura para o mês do casamento de vocês.",
-    },
-  },
 ] as const;
