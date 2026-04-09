@@ -44,13 +44,28 @@ export function ProgressFooter() {
               {formatBRL(totalConfirmed)}
             </span>
           </p>
+          {total < path.length && (
+            <p className="text-[10px] text-muted-foreground mt-0.5">
+              Vocês podem avançar a qualquer momento
+            </p>
+          )}
         </div>
-        <Link
-          href="/meu-casamento"
-          className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out w-full sm:w-auto"
-        >
-          Ir ao meu casamento →
-        </Link>
+        <div className="flex items-center gap-2 w-full sm:w-auto">
+          {total >= 3 && (
+            <Link
+              href="/meu-casamento"
+              className="inline-flex items-center justify-center min-h-12 px-5 rounded-md border border-border text-sm font-medium text-foreground tracking-wide hover:bg-accent transition-colors flex-1 sm:flex-initial"
+            >
+              Ver resumo
+            </Link>
+          )}
+          <Link
+            href={total >= 3 ? "/checkout" : "/meu-casamento"}
+            className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out flex-1 sm:flex-initial"
+          >
+            {total >= 3 ? "Finalizar seleção →" : "Ver meu casamento →"}
+          </Link>
+        </div>
       </div>
     </div>
   );
