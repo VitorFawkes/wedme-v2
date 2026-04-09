@@ -8,6 +8,7 @@ import { BackLink } from "@/components/layout/back-link";
 import { CoupleNavbar } from "@/components/layout/couple-navbar";
 import { VendorCard } from "@/components/planejamento/vendor-card";
 import { ProgressFooter } from "@/components/planejamento/progress-footer";
+import { BottomTabNav } from "@/components/layout/bottom-tab-nav";
 import { TriggerInlineCard } from "@/components/triggers/trigger-inline-card";
 import {
   TriggerRenderer,
@@ -58,7 +59,7 @@ export function CategoryClient({
       <CoupleNavbar />
       <TriggerRenderer />
 
-      <main className="min-h-dvh pt-couple pb-32 safe-px">
+      <main className="min-h-dvh pt-couple pb-52 safe-px">
         <div className="max-w-7xl mx-auto px-4 md:px-12 py-8 md:py-12">
           {/* Voltar para o plano (categoria pai) */}
           <BackLink href="/planejamento" label="Voltar ao meu plano" className="mb-6" />
@@ -115,6 +116,7 @@ export function CategoryClient({
       </main>
 
       <ProgressFooter />
+      <BottomTabNav />
       <SpecialistWidget />
     </>
   );
