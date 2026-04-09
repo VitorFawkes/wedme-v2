@@ -29,7 +29,7 @@ export function ProgressFooter() {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-30 safe-bottom safe-px bg-background border-t border-border shadow-[0_-4px_20px_rgba(12,1,6,0.06)]"
+      className="fixed bottom-14 left-0 right-0 z-30 safe-px bg-background border-t border-border shadow-[0_-4px_20px_rgba(12,1,6,0.10)]"
       role="status"
       aria-label="Progresso do planejamento"
     >
@@ -51,17 +51,9 @@ export function ProgressFooter() {
           )}
         </div>
         <div className="flex items-center gap-2 w-full sm:w-auto">
-          {total >= 3 && (
-            <Link
-              href="/meu-casamento"
-              className="inline-flex items-center justify-center min-h-12 px-5 rounded-md border border-border text-sm font-medium text-foreground tracking-wide hover:bg-accent transition-colors flex-1 sm:flex-initial"
-            >
-              Ver resumo
-            </Link>
-          )}
           <Link
             href={total >= 3 ? "/checkout" : "/meu-casamento"}
-            className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out flex-1 sm:flex-initial"
+            className="inline-flex items-center justify-center min-h-12 px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide shadow-md shadow-primary/25 hover:bg-brand-wine hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-[1px] active:translate-y-0 active:shadow-sm transition-all duration-300 ease-out flex-1 sm:flex-initial"
           >
             {total >= 3 ? "Finalizar seleção →" : "Ver meu casamento →"}
           </Link>

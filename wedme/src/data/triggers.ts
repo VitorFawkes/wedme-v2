@@ -75,9 +75,28 @@ export const triggers: readonly TriggerRule[] = [
   },
 
   // ============================================================
-  // 4. MATCH DE PERFIL — autoridade + match percentual
-  // Escassez de data e peer-live removidos: o banner inline abaixo
-  // do nome do vendor já cumpre essa função sem duplicar.
+  // 4. ESCASSEZ CONCRETA DA DATA — inline card (1 por página)
+  // ============================================================
+  {
+    slug: "escassez-data",
+    name: "Escassez concreta da data do casal",
+    priority: 75,
+    once: false,
+    position: "inline_card",
+    style: "subtle",
+    conditions: [
+      { type: "wedding_date_set" },
+      { type: "on_route", pattern: "/oferta/" },
+    ],
+    content: {
+      icon: "Clock",
+      title: "Data disponível",
+      body: "{Este_tipo} tem o dia de vocês livre ({data_extensa}). Confirme para garantir.",
+    },
+  },
+
+  // ============================================================
+  // 5. MATCH DE PERFIL — fallback quando não tem escassez
   // ============================================================
   {
     slug: "match-perfil",

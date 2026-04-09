@@ -134,16 +134,13 @@ export function OfertaClient({ slug }: { slug: string }) {
             className="mb-5"
           />
 
-          {/* Inline triggers (match-perfil etc) */}
+          {/* Inline trigger (max 1 — escassez OU match, por prioridade) */}
           {hydrated && inlineTriggers.length > 0 && (
-            <div className="mb-6 md:mb-8 space-y-4">
-              {inlineTriggers.map((t) => (
-                <TriggerInlineCard
-                  key={t.rule.slug}
-                  trigger={t}
-                  onDismiss={() => dismissTrigger(t.rule.slug)}
-                />
-              ))}
+            <div className="mb-6 md:mb-8">
+              <TriggerInlineCard
+                trigger={inlineTriggers[0]}
+                onDismiss={() => dismissTrigger(inlineTriggers[0].rule.slug)}
+              />
             </div>
           )}
 
