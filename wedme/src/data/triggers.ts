@@ -215,4 +215,47 @@ export const triggers: readonly TriggerRule[] = [
       body: "Já priorizamos espaços com capacidade adequada. Os locais abaixo acomodam confortavelmente o tamanho do casamento de vocês, sem pista vazia, sem aperto.",
     },
   },
+
+  // ============================================================
+  // 11. CASAMENTO PRÓXIMO — urgência real
+  // ============================================================
+  {
+    slug: "casamento-proximo",
+    name: "Casamento em menos de 180 dias",
+    priority: 82,
+    once: false,
+    position: "inline_card",
+    style: "subtle",
+    conditions: [
+      { type: "wedding_within_days", value: 180 },
+      { type: "categories_selected_lte", value: 2 },
+      { type: "on_route_exact", path: "/planejamento" },
+    ],
+    content: {
+      icon: "Calendar",
+      title: "A data de vocês está chegando",
+      body: "Quanto antes confirmarem, mais opções terão. As melhores datas e profissionais costumam fechar com antecedência.",
+    },
+  },
+
+  // ============================================================
+  // 12. AGENDA CONCORRIDA — escassez de venue
+  // ============================================================
+  {
+    slug: "agenda-concorrida",
+    name: "Venue com alta procura no mês do casamento",
+    priority: 75,
+    once: false,
+    position: "top_bar",
+    style: "subtle",
+    conditions: [
+      { type: "wedding_date_set" },
+      { type: "on_route", pattern: "/oferta/" },
+    ],
+    content: {
+      icon: "CalendarClock",
+      title: "Alta procura",
+      body: "{Este_tipo} tem alta procura para o mês do casamento de vocês.",
+    },
+  },
 ] as const;

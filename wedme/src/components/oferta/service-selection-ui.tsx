@@ -71,10 +71,20 @@ export function ServiceSelectionUI({
   }, [isBYO, selectedItems, byoItems, allItems]);
 
   function toggleItem(itemId: string) {
+    const item = allItems.find((i) => i.id === itemId);
     setSelectedItems((prev) => {
       const next = new Set(prev);
-      if (next.has(itemId)) next.delete(itemId);
-      else next.add(itemId);
+      if (item?.category === "base") {
+        // Radio behavior: deselect all other base items, toggle this one
+        for (const base of baseItems) {
+          if (base.id !== itemId) next.delete(base.id);
+        }
+        if (next.has(itemId)) next.delete(itemId);
+        else next.add(itemId);
+      } else {
+        if (next.has(itemId)) next.delete(itemId);
+        else next.add(itemId);
+      }
       return next;
     });
   }
@@ -148,6 +158,7 @@ export function ServiceSelectionUI({
                         item={item}
                         selected={selectedItems.has(item.id)}
                         onToggle={toggleItem}
+                        isRadio
                       />
                     ))}
                   </div>
@@ -192,7 +203,7 @@ export function ServiceSelectionUI({
       )}
 
       {/* Sticky footer with total */}
-      <div className="fixed bottom-0 left-0 right-0 z-20 bg-card border-t border-border px-6 py-4 safe-bottom">
+      <div className="fixed bottom-0 left-0 right-0 z-30 bg-card border-t border-border px-6 py-4 safe-bottom">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-4">
           <div>
             <p className="text-xs text-muted-foreground">Total</p>

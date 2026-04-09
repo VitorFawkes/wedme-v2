@@ -133,6 +133,13 @@ function checkCondition(
       return ctx.pathname.startsWith(cond.pattern);
     case "on_route_exact":
       return ctx.pathname === cond.path;
+    case "wedding_within_days": {
+      if (!ctx.wedding_date) return false;
+      const daysUntil = Math.floor(
+        (new Date(ctx.wedding_date).getTime() - Date.now()) / 86400000,
+      );
+      return daysUntil <= cond.value && daysUntil > 0;
+    }
     default:
       return false;
   }
