@@ -75,46 +75,9 @@ export const triggers: readonly TriggerRule[] = [
   },
 
   // ============================================================
-  // 4. ESCASSEZ CONCRETA DA DATA — urgência sem manipulação
-  // ============================================================
-  {
-    slug: "escassez-data",
-    name: "Escassez concreta da data do casal",
-    priority: 85,
-    once: false,
-    position: "floating_badge",
-    style: "subtle",
-    conditions: [
-      { type: "wedding_date_set" },
-      { type: "on_route", pattern: "/oferta/" },
-    ],
-    content: {
-      icon: "Clock",
-      title: "Data disponível",
-      body: "{Este_tipo} tem o dia de vocês livre ({data_extensa}).",
-    },
-  },
-
-  // ============================================================
-  // 5. PEER LIVE — quem mais está olhando AGORA (novo)
-  // ============================================================
-  {
-    slug: "peer-live-oferta",
-    name: "Outros casais observando esta op\u00e7\u00e3o agora",
-    priority: 70,
-    once: false,
-    position: "floating_badge",
-    style: "subtle",
-    conditions: [{ type: "on_route", pattern: "/oferta/" }],
-    content: {
-      icon: "Eye",
-      title: "Bastante procurado",
-      body: "{Este_tipo} está entre os mais visitados da plataforma.",
-    },
-  },
-
-  // ============================================================
-  // 6. MATCH DE PERFIL — autoridade + match percentual (novo)
+  // 4. MATCH DE PERFIL — autoridade + match percentual
+  // Escassez de data e peer-live removidos: o banner inline abaixo
+  // do nome do vendor já cumpre essa função sem duplicar.
   // ============================================================
   {
     slug: "match-perfil",
