@@ -9,6 +9,7 @@ import { FAQSection } from "./faq-section";
 import { formatBRL } from "@/lib/format";
 import { useCouple } from "@/store/couple";
 import { useRouter } from "next/navigation";
+import { getCategoriesPending } from "@/lib/couple-helpers";
 
 type Props = {
   vendorSlug: string;
@@ -29,6 +30,9 @@ export function ServiceSelectionUI({
 }: Props) {
   const router = useRouter();
   const addSelection = useCouple((s) => s.addSelection);
+  const wedding_profile_slug = useCouple((s) => s.wedding_profile_slug);
+  const selections = useCouple((s) => s.selections);
+  const skipped_categories = useCouple((s) => s.skipped_categories);
 
   // Get default items from all service groups
   const allDefaults = useMemo(
@@ -111,7 +115,23 @@ export function ServiceSelectionUI({
       is_bring_your_own: isBYO,
     });
 
-    setTimeout(() => router.push("/planejamento"), 400);
+    setTimeout(() => {
+      // Find next pending category after this selection
+      const updatedSelections = [...selections, {
+        category_slug: categorySlug,
+        vendor_slug: vendorSlug,
+        package_id: isBYO ? "bring-your-own" : services[0]?.id ?? "custom",
+        quoted_price: total,
+        selected_at: new Date().toISOString(),
+      }];
+      const pending = getCategoriesPending(
+        updatedSelections,
+        wedding_profile_slug,
+        skipped_categories,
+      );
+      const hash = pending.length > 0 ? `#cat-${pending[0]}` : "";
+      router.push(`/planejamento${hash}`);
+    }, 400);
   }
 
   // Group items by category for display
