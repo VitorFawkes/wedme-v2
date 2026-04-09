@@ -33,31 +33,21 @@ export function ProgressFooter() {
       role="status"
       aria-label="Progresso do planejamento"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 md:py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
-        <div className="flex-1 min-w-0 text-center sm:text-left">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center gap-3 sm:gap-6">
+        <div className="flex-1 min-w-0">
           <p className="text-xs md:text-sm text-muted-foreground tracking-wide font-sans">
             <span className="font-medium text-foreground">
-              {total} de {path.length}
+              {total}/{path.length}
             </span>{" "}
-            categorias escolhidas ·{" "}
-            <span className="font-medium text-foreground">
-              {formatBRL(totalConfirmed)}
-            </span>
+            · <span className="font-medium text-foreground">{formatBRL(totalConfirmed)}</span>
           </p>
-          {total < path.length && (
-            <p className="text-[10px] text-muted-foreground mt-0.5">
-              Vocês podem avançar a qualquer momento
-            </p>
-          )}
         </div>
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-          <Link
-            href={total >= 3 ? "/checkout" : "/meu-casamento"}
-            className="inline-flex items-center justify-center min-h-12 px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide shadow-md shadow-primary/25 hover:bg-brand-wine hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-[1px] active:translate-y-0 active:shadow-sm transition-all duration-300 ease-out flex-1 sm:flex-initial"
-          >
-            {total >= 3 ? "Finalizar seleção →" : "Ver meu casamento →"}
-          </Link>
-        </div>
+        <Link
+          href={total >= 3 ? "/checkout" : "/meu-casamento"}
+          className="shrink-0 inline-flex items-center justify-center min-h-11 px-5 md:px-7 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide shadow-md shadow-primary/25 hover:bg-brand-wine hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-[1px] active:translate-y-0 active:shadow-sm transition-all duration-300 ease-out"
+        >
+          {total >= 3 ? "Finalizar seleção →" : "Ver meu casamento →"}
+        </Link>
       </div>
     </div>
   );
