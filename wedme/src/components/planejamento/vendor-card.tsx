@@ -61,7 +61,7 @@ export function VendorCard({ vendor }: { vendor: Vendor }) {
               {formatBRL(minPrice)}
             </p>
           </div>
-          <span className="inline-flex items-center min-h-11 px-4 md:px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide group-hover:bg-brand-wine transition-colors">
+          <span className="inline-flex items-center min-h-11 px-4 md:px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide group-hover:bg-brand-wine transition-colors">
             Ver perfil →
           </span>
         </div>

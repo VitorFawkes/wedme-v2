@@ -23,7 +23,7 @@ export default function PrototipoPage() {
 
       <Link
         href="/"
-        className="mt-8 inline-flex items-center justify-center min-h-11 px-6 py-3 rounded-md border border-primary/40 text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+        className="mt-8 inline-flex items-center justify-center min-h-11 px-6 py-3 rounded-sm border border-primary text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
       >
         Voltar ao início
       </Link>

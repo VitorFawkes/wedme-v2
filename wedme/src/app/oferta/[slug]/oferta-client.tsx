@@ -25,42 +25,6 @@ import { CATEGORY_SERVICES } from "@/data/services";
 import { cn } from "@/lib/utils";
 import type { Vendor } from "@/types";
 
-const MONTH_NAMES = [
-  "janeiro", "fevereiro", "março", "abril", "maio", "junho",
-  "julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
-];
-
-function getScarcityMessage(vendor: Vendor, weddingDate: string | null): string | null {
-  if (vendor.category === "local" && weddingDate) {
-    // Count available dates in the wedding month
-    const d = new Date(weddingDate);
-    const yyyy = d.getFullYear();
-    const mm = d.getMonth();
-    const monthStr = `${yyyy}-${String(mm + 1).padStart(2, "0")}`;
-    const blockedInMonth = vendor.unavailable_dates.filter((dt) =>
-      dt.startsWith(monthStr),
-    ).length;
-    // Count weekends (Sat) in the month — typical wedding days
-    let totalSaturdays = 0;
-    const iter = new Date(yyyy, mm, 1);
-    while (iter.getMonth() === mm) {
-      if (iter.getDay() === 6) totalSaturdays++;
-      iter.setDate(iter.getDate() + 1);
-    }
-    const available = Math.max(0, totalSaturdays - blockedInMonth);
-    if (available <= 8 && blockedInMonth >= 2) {
-      return `Apenas ${available} data${available !== 1 ? "s" : ""} disponível${available !== 1 ? "eis" : ""} em ${MONTH_NAMES[mm]}`;
-    }
-  }
-
-  // Popular vendors
-  if (vendor.category !== "local" && vendor.rating >= 4.8 && vendor.total_reviews >= 50) {
-    return "Alta procura. Confirme com antecedência.";
-  }
-
-  return null;
-}
-
 export function OfertaClient({ slug }: { slug: string }) {
   const router = useRouter();
   const wedding_date = useCouple((s) => s.wedding_date);
@@ -134,13 +98,16 @@ export function OfertaClient({ slug }: { slug: string }) {
             className="mb-5"
           />
 
-          {/* Inline trigger (max 1 — escassez OU match, por prioridade) */}
+          {/* Inline triggers (match-perfil etc) */}
           {hydrated && inlineTriggers.length > 0 && (
-            <div className="mb-6 md:mb-8">
-              <TriggerInlineCard
-                trigger={inlineTriggers[0]}
-                onDismiss={() => dismissTrigger(inlineTriggers[0].rule.slug)}
-              />
+            <div className="mb-6 md:mb-8 space-y-4">
+              {inlineTriggers.map((t) => (
+                <TriggerInlineCard
+                  key={t.rule.slug}
+                  trigger={t}
+                  onDismiss={() => dismissTrigger(t.rule.slug)}
+                />
+              ))}
             </div>
           )}
 
@@ -196,16 +163,6 @@ export function OfertaClient({ slug }: { slug: string }) {
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground tracking-editorial leading-[1.1] mb-4">
                 {vendor.name}
               </h1>
-              {hydrated && (() => {
-                const msg = getScarcityMessage(vendor, wedding_date);
-                if (!msg) return null;
-                return (
-                  <div className="mb-4 border-l-2 border-primary/60 bg-accent/50 rounded-r-sm px-3 py-2">
-                    <p className="text-xs text-foreground/80">{msg}</p>
-                  </div>
-                );
-              })()}
-
               <p className="flex items-center flex-wrap gap-x-2 gap-y-1 text-sm text-muted-foreground mb-6">
                 <span>
                   {vendor.city}
@@ -282,7 +239,7 @@ export function OfertaClient({ slug }: { slug: string }) {
 
                 <a
                   href="#servicos"
-                  className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
+                  className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
                 >
                   Ver serviços →
                 </a>
@@ -290,7 +247,73 @@ export function OfertaClient({ slug }: { slug: string }) {
             </aside>
           </div>
 
-          {/* Seção de pacotes removida — seleção individual abaixo */}
+          {/* Pacotes */}
+          <section id="pacotes" className="mb-12 md:mb-16 scroll-mt-20">
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground tracking-editorial mb-6 md:mb-8">
+              Pacotes disponíveis
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+              {vendor.packages.map((pkg) => {
+                const isSelected = selectedPackage === pkg.id;
+                return (
+                  <article
+                    key={pkg.id}
+                    className={cn(
+                      "rounded-md border p-6 md:p-7 flex flex-col bg-card transition-colors",
+                      isSelected
+                        ? "border-primary ring-1 ring-primary"
+                        : "border-border",
+                    )}
+                  >
+                    <h3 className="font-display text-2xl md:text-3xl font-medium text-foreground tracking-editorial mb-2">
+                      {pkg.name}
+                    </h3>
+                    <p className="font-display text-3xl md:text-4xl text-primary tracking-editorial mb-1">
+                      {formatBRL(pkg.price)}
+                    </p>
+                    <Overline className="mb-5">Valor de referência</Overline>
+
+                    <ul className="space-y-2.5 mb-6 flex-1">
+                      {pkg.includes.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2.5 text-sm text-foreground leading-relaxed"
+                        >
+                          <Check className="size-4 text-primary shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                      {pkg.excludes.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2.5 text-sm text-muted-foreground leading-relaxed"
+                        >
+                          <XIcon className="size-4 text-muted-foreground shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSelectedPackage(pkg.id);
+                        handleSelectPackage(pkg.id);
+                      }}
+                      disabled={confirmingPackage}
+                      className="inline-flex items-center justify-center w-full min-h-12 px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors disabled:opacity-50"
+                    >
+                      {confirmingPackage && isSelected
+                        ? "Salvando…"
+                        : existingSelection?.package_id === pkg.id
+                          ? "✓ Pacote escolhido"
+                          : "Quero este pacote →"}
+                    </button>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
 
           {/* Serviços individuais (novo sistema) */}
           {vendor && (
@@ -392,6 +415,36 @@ export function OfertaClient({ slug }: { slug: string }) {
           )}
         </div>
       </main>
+
+      {/* Bottom bar mobile com preço + CTA */}
+      <div className="lg:hidden sticky bottom-0 left-0 right-0 z-30 safe-bottom safe-px bg-card border-t border-border shadow-[0_-4px_20px_rgba(12,1,6,0.08)]">
+        <div className="px-4 py-3 flex items-center gap-3">
+          <div className="flex-1 min-w-0">
+            <Overline>A partir de</Overline>
+            <p className="font-display text-xl text-foreground tracking-editorial leading-tight">
+              {formatBRL(minPrice)}
+            </p>
+            {hydrated && wedding_date && (
+              <p
+                className={cn(
+                  "text-xs",
+                  isAvailable
+                    ? "text-foreground"
+                    : "text-muted-foreground",
+                )}
+              >
+                {isAvailable ? "✓ Disponível" : "Indisponível"}
+              </p>
+            )}
+          </div>
+          <a
+            href="#servicos"
+            className="shrink-0 inline-flex items-center justify-center min-h-12 px-5 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
+          >
+            Ver serviços →
+          </a>
+        </div>
+      </div>
 
       <Lightbox
         images={allImages}

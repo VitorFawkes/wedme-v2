@@ -363,7 +363,7 @@ export default function CheckoutPage() {
               onClick={handleConfirm}
               disabled={!agreed || selections.length === 0}
               className={cn(
-                "w-full inline-flex items-center justify-center min-h-16 md:min-h-[68px] px-8 py-5 rounded-md bg-primary text-primary-foreground text-base md:text-lg font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out",
+                "w-full inline-flex items-center justify-center min-h-16 md:min-h-[68px] px-8 py-5 rounded-sm bg-primary text-primary-foreground text-base md:text-lg font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200",
                 "disabled:opacity-40 disabled:pointer-events-none",
               )}
             >

@@ -165,7 +165,7 @@ export default function MeuCasamentoPage() {
             </p>
             <Link
               href={slug ? `/casamento/${slug}` : "#"}
-              className="inline-flex items-center justify-center min-h-11 px-6 py-3 rounded-md border border-primary/40 text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+              className="inline-flex items-center justify-center min-h-11 px-6 py-3 rounded-sm border border-primary text-primary text-sm font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
             >
               Criar Website
             </Link>
@@ -293,7 +293,7 @@ export default function MeuCasamentoPage() {
                 </p>
                 <Link
                   href={`/planejamento/${nextPendingCategory.slug}`}
-                  className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 mt-5 rounded-md bg-primary text-primary-foreground text-sm md:text-base font-medium tracking-wide hover:bg-brand-wine transition-colors"
+                  className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 mt-5 rounded-sm bg-primary text-primary-foreground text-sm md:text-base font-medium tracking-wide hover:bg-brand-wine transition-colors"
                 >
                   Escolher agora →
                 </Link>
@@ -308,7 +308,7 @@ export default function MeuCasamentoPage() {
                 </p>
                 <Link
                   href="/checkout"
-                  className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 mt-5 rounded-md bg-primary text-primary-foreground text-sm md:text-base font-medium tracking-wide hover:bg-brand-wine transition-colors"
+                  className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 mt-5 rounded-sm bg-primary text-primary-foreground text-sm md:text-base font-medium tracking-wide hover:bg-brand-wine transition-colors"
                 >
                   Ir ao checkout →
                 </Link>
@@ -333,7 +333,7 @@ export default function MeuCasamentoPage() {
                 href={`/casamento/${slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 mt-5 rounded-md border border-primary/40 text-primary text-sm md:text-base font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="inline-flex items-center justify-center min-h-12 px-6 md:px-7 mt-5 rounded-sm border border-primary text-primary text-sm md:text-base font-medium tracking-wide hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 Ver preview →
               </Link>

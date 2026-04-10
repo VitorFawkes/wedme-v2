@@ -73,7 +73,7 @@ export function CasamentoClient({ slug }: { slug: string }) {
         </p>
         <Link
           href="/"
-          className="inline-flex items-center justify-center min-h-12 px-6 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
+          className="inline-flex items-center justify-center min-h-12 px-6 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors"
         >
           Voltar ao início
         </Link>

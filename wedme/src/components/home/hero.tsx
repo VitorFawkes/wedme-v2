@@ -40,7 +40,7 @@ export function Hero() {
         <div className="mt-8 md:mt-10">
           <Link
             href="/comece"
-            className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-md bg-primary text-primary-foreground text-sm md:text-base font-medium tracking-wide shadow-lg shadow-primary/30 hover:bg-brand-wine hover:shadow-xl hover:-translate-y-[1px] active:translate-y-0 active:shadow-md transition-all duration-300 ease-out"
+            className="inline-flex items-center justify-center min-h-12 px-8 py-4 rounded-sm bg-primary text-primary-foreground text-sm md:text-base font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200"
           >
             Planejar meu casamento
           </Link>

@@ -181,8 +181,7 @@ export type TriggerCondition =
   | { type: "wedding_date_set" }
   | { type: "guest_count_set" }
   | { type: "on_route"; pattern: string }
-  | { type: "on_route_exact"; path: string }
-  | { type: "wedding_within_days"; value: number };
+  | { type: "on_route_exact"; path: string };
 
 export type TriggerPosition =
   | "top_bar"

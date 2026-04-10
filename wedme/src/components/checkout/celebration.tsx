@@ -52,7 +52,7 @@ export function CelebrationScreen({ slug }: { slug: string }) {
       <div className="mt-12 md:mt-16 flex flex-col items-center gap-3">
         <Link
           href={`/casamento/${slug}`}
-          className="inline-flex items-center justify-center min-h-14 px-8 md:px-10 py-4 rounded-md bg-primary text-primary-foreground text-base md:text-lg font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out"
+          className="inline-flex items-center justify-center min-h-14 px-8 md:px-10 py-4 rounded-sm bg-primary text-primary-foreground text-base md:text-lg font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200"
         >
           Ver nosso site de casamento →
         </Link>

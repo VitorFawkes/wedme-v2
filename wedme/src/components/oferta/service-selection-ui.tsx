@@ -9,7 +9,6 @@ import { FAQSection } from "./faq-section";
 import { formatBRL } from "@/lib/format";
 import { useCouple } from "@/store/couple";
 import { useRouter } from "next/navigation";
-import { getCategoriesPending } from "@/lib/couple-helpers";
 
 type Props = {
   vendorSlug: string;
@@ -30,9 +29,6 @@ export function ServiceSelectionUI({
 }: Props) {
   const router = useRouter();
   const addSelection = useCouple((s) => s.addSelection);
-  const wedding_profile_slug = useCouple((s) => s.wedding_profile_slug);
-  const selections = useCouple((s) => s.selections);
-  const skipped_categories = useCouple((s) => s.skipped_categories);
 
   // Get default items from all service groups
   const allDefaults = useMemo(
@@ -75,20 +71,10 @@ export function ServiceSelectionUI({
   }, [isBYO, selectedItems, byoItems, allItems]);
 
   function toggleItem(itemId: string) {
-    const item = allItems.find((i) => i.id === itemId);
     setSelectedItems((prev) => {
       const next = new Set(prev);
-      if (item?.category === "base") {
-        // Radio behavior: deselect all other base items, toggle this one
-        for (const base of baseItems) {
-          if (base.id !== itemId) next.delete(base.id);
-        }
-        if (next.has(itemId)) next.delete(itemId);
-        else next.add(itemId);
-      } else {
-        if (next.has(itemId)) next.delete(itemId);
-        else next.add(itemId);
-      }
+      if (next.has(itemId)) next.delete(itemId);
+      else next.add(itemId);
       return next;
     });
   }
@@ -115,23 +101,7 @@ export function ServiceSelectionUI({
       is_bring_your_own: isBYO,
     });
 
-    setTimeout(() => {
-      // Find next pending category after this selection
-      const updatedSelections = [...selections, {
-        category_slug: categorySlug,
-        vendor_slug: vendorSlug,
-        package_id: isBYO ? "bring-your-own" : services[0]?.id ?? "custom",
-        quoted_price: total,
-        selected_at: new Date().toISOString(),
-      }];
-      const pending = getCategoriesPending(
-        updatedSelections,
-        wedding_profile_slug,
-        skipped_categories,
-      );
-      const hash = pending.length > 0 ? `#cat-${pending[0]}` : "";
-      router.push(`/planejamento${hash}`);
-    }, 400);
+    setTimeout(() => router.push("/planejamento"), 400);
   }
 
   // Group items by category for display
@@ -178,7 +148,6 @@ export function ServiceSelectionUI({
                         item={item}
                         selected={selectedItems.has(item.id)}
                         onToggle={toggleItem}
-                        isRadio
                       />
                     ))}
                   </div>
@@ -223,7 +192,7 @@ export function ServiceSelectionUI({
       )}
 
       {/* Sticky footer with total */}
-      <div className="fixed bottom-0 left-0 right-0 z-30 bg-card border-t border-border px-6 py-4 safe-bottom">
+      <div className="fixed bottom-0 left-0 right-0 z-20 bg-card border-t border-border px-6 py-4 safe-bottom">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-4">
           <div>
             <p className="text-xs text-muted-foreground">Total</p>
@@ -234,7 +203,7 @@ export function ServiceSelectionUI({
           <button
             onClick={handleConfirm}
             disabled={!hasBaseItem}
-            className="min-h-11 px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine hover:shadow-lg hover:-translate-y-[1px] active:translate-y-0 transition-all duration-300 ease-out disabled:opacity-50 disabled:pointer-events-none"
+            className="min-h-11 px-6 py-3 rounded-sm bg-primary text-primary-foreground text-sm font-medium tracking-wide hover:bg-brand-wine transition-colors duration-200 disabled:opacity-50 disabled:pointer-events-none"
           >
             Confirmar seleção
           </button>

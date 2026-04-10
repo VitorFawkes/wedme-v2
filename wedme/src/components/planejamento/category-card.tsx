@@ -90,9 +90,8 @@ export function CategoryCard({
   if (isSkipped) {
     return (
       <div
-        id={`cat-${category.slug}`}
         className={cn(
-          "scroll-mt-24 relative block rounded-md border border-border border-dashed bg-background/40 min-h-[200px] md:min-h-[220px] flex flex-col p-5 md:p-6",
+          "relative block rounded-md border border-border border-dashed bg-background/40 min-h-[200px] md:min-h-[220px] flex flex-col p-5 md:p-6",
         )}
       >
         <div className="flex items-start justify-between gap-3">
@@ -127,9 +126,8 @@ export function CategoryCard({
   // ============================================================
   return (
     <article
-      id={`cat-${category.slug}`}
       className={cn(
-        "scroll-mt-24 group relative rounded-md border overflow-hidden transition-all duration-300 hover:shadow-lg min-h-[200px] md:min-h-[220px] flex flex-col",
+        "group relative rounded-md border overflow-hidden transition-all duration-300 hover:shadow-lg min-h-[200px] md:min-h-[220px] flex flex-col",
         isSelected
           ? "bg-primary/5 border-primary/30"
           : "bg-card border-border",

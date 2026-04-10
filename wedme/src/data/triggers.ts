@@ -75,14 +75,14 @@ export const triggers: readonly TriggerRule[] = [
   },
 
   // ============================================================
-  // 4. ESCASSEZ CONCRETA DA DATA — inline card (1 por página)
+  // 4. ESCASSEZ CONCRETA DA DATA — urgência sem manipulação
   // ============================================================
   {
     slug: "escassez-data",
     name: "Escassez concreta da data do casal",
-    priority: 75,
+    priority: 85,
     once: false,
-    position: "inline_card",
+    position: "floating_badge",
     style: "subtle",
     conditions: [
       { type: "wedding_date_set" },
@@ -91,12 +91,30 @@ export const triggers: readonly TriggerRule[] = [
     content: {
       icon: "Clock",
       title: "Data disponível",
-      body: "{Este_tipo} tem o dia de vocês livre ({data_extensa}). Confirme para garantir.",
+      body: "{Este_tipo} tem o dia de vocês livre ({data_extensa}).",
     },
   },
 
   // ============================================================
-  // 5. MATCH DE PERFIL — fallback quando não tem escassez
+  // 5. PEER LIVE — quem mais está olhando AGORA (novo)
+  // ============================================================
+  {
+    slug: "peer-live-oferta",
+    name: "Outros casais observando esta op\u00e7\u00e3o agora",
+    priority: 70,
+    once: false,
+    position: "floating_badge",
+    style: "subtle",
+    conditions: [{ type: "on_route", pattern: "/oferta/" }],
+    content: {
+      icon: "Eye",
+      title: "Bastante procurado",
+      body: "{Este_tipo} está entre os mais visitados da plataforma.",
+    },
+  },
+
+  // ============================================================
+  // 6. MATCH DE PERFIL — autoridade + match percentual (novo)
   // ============================================================
   {
     slug: "match-perfil",
@@ -197,27 +215,4 @@ export const triggers: readonly TriggerRule[] = [
       body: "Já priorizamos espaços com capacidade adequada. Os locais abaixo acomodam confortavelmente o tamanho do casamento de vocês, sem pista vazia, sem aperto.",
     },
   },
-
-  // ============================================================
-  // 11. CASAMENTO PRÓXIMO — urgência real
-  // ============================================================
-  {
-    slug: "casamento-proximo",
-    name: "Casamento em menos de 180 dias",
-    priority: 82,
-    once: false,
-    position: "inline_card",
-    style: "subtle",
-    conditions: [
-      { type: "wedding_within_days", value: 180 },
-      { type: "categories_selected_lte", value: 2 },
-      { type: "on_route_exact", path: "/planejamento" },
-    ],
-    content: {
-      icon: "Calendar",
-      title: "A data de vocês está chegando",
-      body: "Quanto antes confirmarem, mais opções terão. As melhores datas e profissionais costumam fechar com antecedência.",
-    },
-  },
-
 ] as const;
